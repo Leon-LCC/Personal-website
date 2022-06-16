@@ -1,0 +1,37 @@
+{
+  "name": "leon-lcc-personal-website",
+  "version": "1.0.0",
+  "description": "This is my first time using React to build a website, so there's still much room for improvement.\r Yet, I hope you like my design.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -p 9487",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leon-LCC/Personal-website.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leon-LCC/Personal-website/issues"
+  },
+  "homepage": "https://github.com/Leon-LCC/Personal-website#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^2.2.1",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "framer-motion": "^6.3.11",
+    "next": "^12.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-next": "^12.1.6",
+    "prettier": "^2.7.1"
+  }
+}
