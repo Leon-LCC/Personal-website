@@ -13,7 +13,7 @@ import {
 
 const NavigationBar = () => {
     return (
-        <Flex justifyContent="center" alignItems="center" p='2' pr='20' pl='20'>
+        <Flex justifyContent="center" alignItems="center" p='2' px='28' mx='2'>
             <HStack spacing={4}>
                 <Box bg='blue.500'>
                     <Image src="/Images/logo.gif" alt="logo" width='100%' height='71%' />
