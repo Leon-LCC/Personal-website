@@ -1,5 +1,4 @@
 import {
-    Text,
     Flex
 } from "@chakra-ui/react"
 
@@ -7,7 +6,7 @@ import {
 const footer = () => {
     return (
         <Flex justifyContent="center" alignItems="center">
-            <Text>footer</Text>
+            &copy; {new Date().getFullYear()} Li-Chen Cheng. All Rights Reserved.
         </Flex>
     )
 }

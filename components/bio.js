@@ -10,7 +10,7 @@ import {
 
 const BioBlock = () => {
     return (
-        <Container centerContent maxWidth='70%' my='60' py='4'>
+        <Container centerContent maxWidth='70%' my='60' py='4' id='bio'>
             <VStack spacing='2' w='100%'>
                  <Grid templateRows='repeat(14, 1fr)' templateColumns='repeat(5, 1fr)' gap={6} w='100%'>
                         <GridItem rowSpan={6} colSpan={2} bg='tomato'>
@@ -36,7 +36,6 @@ const BioBlock = () => {
                     Hobby
                 </Box>
             </VStack>
-                   
         </Container>
     )
 }

@@ -8,6 +8,8 @@ Yet, I hope you like my design.
 - 2022/06/16 - Start the project + Hello World
 - 2022/06/19 - NavigationBar Layout
 - 2022/06/26 - Intro + Bio Layout
+- Too busy to continue 
+- 2023/01/08 - Routing + Layout (Restart the project)
 
 
 ## :file_folder: File Struture
