@@ -37,7 +37,7 @@ const NavigationBar = () => {
                         <NextLink href='/'>
                             <MenuItem>Home</MenuItem>
                         </NextLink>
-                        <NextLink href='#bio'>
+                        <NextLink href='/#bio'>
                             <MenuItem>About</MenuItem>
                         </NextLink>
                         <NextLink href='/project'>
@@ -52,7 +52,7 @@ const NavigationBar = () => {
                         <Text fontSize='4xl'>Home</Text>
                     </Box>
                 </NextLink>
-                <NextLink href='#bio'>
+                <NextLink href='/#bio'>
                     <Box bg='teal.500'>
                         <Text fontSize='4xl'>About</Text>
                     </Box>
