@@ -10,6 +10,7 @@ Yet, I hope you like my design.
 - 2022/06/26 - Intro + Bio Layout
 - Too busy to continue 
 - 2023/01/08 - Routing + Layout (Restart the project)
+- 2023/01/09 - Add theme + Modify NavigationBar
 
 
 ## :file_folder: File Struture

@@ -9,7 +9,7 @@ import Layout from "../components/Layout"
 const HomePage = ({ }) => {
     return (
         <Layout>
-            <Container centerContent maxWidth='70%' my='40' py='4'>
+            <Container centerContent maxWidth='70%' my='40' py='4' m='red'>
                 <Grid templateRows='repeat(9, 1fr)' templateColumns='repeat(3, 1fr)' gap={6} w='100%'>
                     <GridItem rowSpan={5} colSpan={3} bg='tomato'>
                         COOl ICON

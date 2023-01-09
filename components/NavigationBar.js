@@ -19,19 +19,17 @@ import { HamburgerIcon } from "@chakra-ui/icons";
 
 const NavigationBar = () => {
     return (
-        <Flex justifyContent="center" alignItems="center" p='2' px='28' mx='2' position='fixed' top='0' w='100%' zIndex='1'>
-            <HStack spacing={4}>
-                <Box bg='blue.500'>
-                    <Image src="/Images/logo.gif" alt="logo" width='100%' height='71%' />
-                </Box>
-                <Box bg='red.500'>
-                    <Heading fontSize='5xl'> Leon </Heading>
-                </Box>
+        <Flex justifyContent="center" alignItems="center" px={[8,24]} position='fixed' top='0' w='100%' bg='#faf5f0'>
+            <HStack spacing={2} >
+                <Image src="/Images/logo.gif" alt="logo" width='70%' height='49%'/>
+                <NextLink href='/'>
+                    <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo'>Leon</Heading>
+                </NextLink>
             </HStack >
             <Spacer />
-            <Box bg='teal.500' display={{ base: 'flex', md: 'none' }}>
+            <Box bg='#faf5f0' display={{ base: 'flex', md: 'none' }}>
                 <Menu>
-                    <MenuButton as={IconButton} icon={<HamburgerIcon />} bg='teal.500' variant='outline' aria-label='Options'>
+                    <MenuButton as={IconButton} icon={<HamburgerIcon />} bg='#E3D5CA' variant='outline' aria-label='Options'>
                     </MenuButton>
                     <MenuList>
                         <NextLink href='/'>
@@ -43,23 +41,31 @@ const NavigationBar = () => {
                         <NextLink href='/project'>
                             <MenuItem>Project</MenuItem>
                         </NextLink>
+                        <NextLink href='/post'>
+                            <MenuItem>Post</MenuItem>
+                        </NextLink>
                     </MenuList>
                 </Menu>
             </Box>
-            <HStack spacing={10} display={{ base: 'none', md: 'flex' }}>
+            <HStack spacing={8} display={{ base: 'none', md: 'flex' }}>
                 <NextLink href='/'>
-                    <Box bg='teal.500'>
-                        <Text fontSize='4xl'>Home</Text>
+                    <Box bg='#faf5f0'>
+                        <Text fontSize='2xl' letterSpacing={'tighter'}>Home</Text>
                     </Box>
                 </NextLink>
                 <NextLink href='/#bio'>
-                    <Box bg='teal.500'>
-                        <Text fontSize='4xl'>About</Text>
+                    <Box bg='#faf5f0'>
+                        <Text fontSize='2xl' letterSpacing={'tighter'}>About</Text>
                     </Box>
                 </NextLink>
                 <NextLink href='/project'>
-                    <Box bg='teal.500'> 
-                        <Text fontSize='4xl'>Project</Text>
+                    <Box bg='#faf5f0'> 
+                        <Text fontSize='2xl' letterSpacing={'tighter'}>Project</Text>
+                    </Box>
+                </NextLink>
+                <NextLink href='/post'>
+                    <Box bg='#faf5f0'>
+                        <Text fontSize='2xl' letterSpacing={'tighter'}>Post</Text>
                     </Box>
                 </NextLink>
             </HStack >
