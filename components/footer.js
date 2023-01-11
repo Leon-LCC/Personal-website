@@ -3,7 +3,7 @@ import {
 } from "@chakra-ui/react"
 
 
-const footer = () => {
+const Footer = () => {
     return (
         <Flex justifyContent="center" alignItems="center" opacity={0.8}>
             &copy; {new Date().getFullYear()} Li-Chen Cheng. All Rights Reserved.
@@ -11,4 +11,4 @@ const footer = () => {
     )
 }
 
-export default footer
+export default Footer

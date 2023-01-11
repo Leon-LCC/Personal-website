@@ -6,7 +6,7 @@ import {
 import ProfileSection from "../components/Profile"
 import Layout from "../components/Layout"
 
-const HomePage = ({ }) => {
+const HomePage = ({}) => {
     return (
         <Layout>
             <Container centerContent my='40' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}}>
