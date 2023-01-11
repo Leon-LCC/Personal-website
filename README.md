@@ -11,6 +11,8 @@ Yet, I hope you like my design.
 - Too busy to continue 
 - 2023/01/08 - Routing + Layout (Restart the project)
 - 2023/01/09 - Add theme + Modify NavigationBar
+- 2023/01/10 - Modify Bio Layout
+- 2023/01/11 - Fixed Buttom Color + Add ProfileItems
 
 
 ## :file_folder: File Struture
@@ -21,3 +23,6 @@ $PROJECT_ROOT
 ```
 
 ## :white_check_mark: Acknowledgement
+
+
+## :memo: Reference
