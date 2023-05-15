@@ -12,18 +12,19 @@ import {
     List,
     ListItem,
     ListIcon,
+    Icon
 } from "@chakra-ui/react"
 import { IoLogoGithub , IoLogoLinkedin } from 'react-icons/io5';
 import {SiGooglescholar, SiIeee} from 'react-icons/si';
 import { MdOutlineEmail } from 'react-icons/md';
 import Image from "next/image";
-
+import NextLink from 'next/link';
 import ProfileItem from "./ProfileItem";
 
 const ProfileSection = () => {
     return (
         <Container centerContent mt='60' mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '90%', lg: '80%'}}>
-            <VStack w='100%' align='center' gap='6' py='10' px={{base: 6, md: 16}} bg='#F7F4F2' borderRadius='xl' boxShadow='xl'>
+            <VStack w='100%' align='center' gap='8' py='10' px={{base: 6, md: 16}} bg='#F7F4F2' borderRadius='xl' boxShadow='xl'>
                 <Box display={{ md: 'flex' }} mt={{ base: 0, md: 4 }}>
                     <Box flexShrink={0}>
                         <Center display={{ base: 'none', lg: 'flex' }} overflow='hidden' borderRadius="full" borderColor="#685950" borderWidth={4} borderStyle="solid">
@@ -40,7 +41,7 @@ const ProfileSection = () => {
                         </Box>
                         <HStack spacing={{base:8, xl: 2}} w='100%' justifyContent='center'>
                             <Box>
-                                <Link href='mailto:lc.cheng00@gmail.com' target="_blank">
+                                <Link href='mailto:lc.cheng00@gmail.com' target="_blank" >
                                     <Button leftIcon={<MdOutlineEmail />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> lc.cheng00@gmail.com </Button>
                                     <IconButton aria-label="Email" icon={<MdOutlineEmail />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
                                 </Link>
@@ -65,8 +66,8 @@ const ProfileSection = () => {
                     <Box h='4'/>
                     <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
                         I am currently pursuing a graduate degree in the Graduate Institute of Networking and Multimedia at National Taiwan University. 
-                        My research interests lie in the fields of Deep Learning and Computer Vision, with a current focus on the security of AIoT systems. 
-                        I am passionate about learning new things and am open to new opportunities!
+                        My research interests lie in the fields of Deep Learning and Computer Vision, with a current focus on the security of AIoT systems such as federated learning and split learning.
+                        See my experiences below or check out my projects <NextLink href='/work'> here</NextLink>.
                     </Text>
                 </Box>
                 <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
@@ -135,16 +136,27 @@ const ProfileSection = () => {
                 <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
                     <Heading veriant='section' size="lg" textAlign='left'>Publication</Heading>
                     <Box h='4'/>
-                    <HStack spacing={4}>
-                        <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'> View my publication on </Text>
-                        <Link href='https://scholar.google.com.tw/' target="_blank">
-                            <Button leftIcon={<SiGooglescholar />} variant='ghost' size='xs' fontSize='lg'> Google Scholar </Button>
+                    <HStack spacing={{base: 0, md: 2}}>
+                        <Text fontSize={{md: "lg", lg: "xl"}} display={{ base: 'none', md: 'flex' }} textAlign='justify'> View on </Text>
+                        <Link href='https://scholar.google.com.tw/citations?hl=zh-TW&user=7974KNgAAAAJ' target="_blank" style={{ textDecoration: 'none' }}>
+                            <Button leftIcon={<SiGooglescholar/>} variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}} display={{ base: 'none', sm: 'flex' }}>
+                                Google Scholar
+                            </Button>
+                            <Button variant='solid3' size='xxs' fontSize='lg' display={{ base: 'flex', sm: 'none' }} mt='1' mb='1.5' x='0'>
+                                Google Scholar
+                            </Button>
                         </Link>
-                        <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'> or </Text>
-                        <Link href='https://ieeexplore.ieee.org/author/37089280660' target="_blank">
-                            <Button leftIcon={<SiIeee />} variant='ghost' size='xs' fontSize='lg'> IEEE Xplore </Button>
+                        <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify' display={{ base: 'none', md: 'flex' }}> or </Text>
+                        <Box h='4' w='6' display={{ base: 'flex', md: 'none' }}/>
+                        <Link href='https://ieeexplore.ieee.org/author/37089280660' target="_blank" style={{ textDecoration: 'none' }}>
+                            <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}} display={{ base: 'none', sm: 'flex' }}>
+                                <Icon as={SiIeee} boxSize={12} mt='0.5' mr='1'/>
+                                Xplore
+                            </Button>
+                            <IconButton aria-label="IEEE" icon={<Icon as={SiIeee}/>} variant='solid3' size='xs' fontSize='5xl' display={{ base: 'flex', sm: 'none' }}/>
                         </Link>
                     </HStack>
+                    
                     <Box h='4'/>
 
                 </Box>
@@ -157,9 +169,6 @@ const ProfileSection = () => {
                         </ListItem>
                         <ListItem>
                             Framework: PyTorch, TensorFlow, OpenCV, Git, Docker, Linux, Flask, React, Bootstrap
-                        </ListItem>
-                        <ListItem>
-                            Specialization: Generative Adversarial Network, Fedearated Learning
                         </ListItem>
                         <ListItem>
                             Language: English (Fluent), Mandarin (Native), Japanese (Basic)

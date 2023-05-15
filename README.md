@@ -13,6 +13,10 @@ Yet, I hope you like my design.
 - 2023/01/09 - Add theme + Modify NavigationBar
 - 2023/01/10 - Modify Bio Layout
 - 2023/01/11 - Fixed Buttom Color + Add ProfileItems
+- Chinese New Year :tada:
+- 2023/02/07 - Fixed underline style in Profile
+- Busy with school work during the semester :sob:
+- 2023/05/15 - Fixed google scholar icon
 
 
 ## :file_folder: File Struture
