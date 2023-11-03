@@ -61,8 +61,8 @@ const ProfileSection = () => {
                         </HStack>
                     </Box>
                 </Box>
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
-                    <Heading variant='section' fontSize={{md: "2xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
+                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 6, sm: 8}} py='6'>
+                    <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
                     <Box h='4'/>
                     <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
                         I am currently pursuing a graduate degree in the Graduate Institute of Networking and Multimedia at National Taiwan University. 
@@ -70,8 +70,41 @@ const ProfileSection = () => {
                         See my experiences below or check out my projects <NextLink href='/work'> here</NextLink>.
                     </Text>
                 </Box>
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
-                    <Heading variant='section' fontSize={{md: "2xl", lg: "3xl"}} textAlign='left'>Education</Heading>
+
+                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 5, sm: 8}} py='6'>
+                    <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Experience</Heading>
+                    <Box h='4'/>
+                    <ProfileItem
+                        title='Research Assistant'
+                        shortTitle='RA'
+                        date='2021 - 2022'
+                        location='FGCN Lab, National Taiwan University, Taiwan'
+                        shortLocation='FGCN Lab, NTU, Taiwan'
+                        description='Supervisor: Prof. Ai-Chun Pang'
+                        type='research'
+                    />
+                    <ProfileItem
+                        title='Research Assistant'
+                        shortTitle='RA'
+                        date='2020 - 2021'
+                        location='CITI, Academia Sinica, Taiwan'
+                        shortLocation='CITI, Academia Sinica, Taiwan'
+                        description='Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.'
+                        type='research'
+                    />
+                    <ProfileItem
+                        title='Summer Intern'
+                        shortTitle='Summer Intern'
+                        date='2019'
+                        location='MediaTek, Taiwan'
+                        shortLocation='MediaTek, Taiwan'
+                        description='Developed computer vision algorithms.'
+                        type='work'
+                    />
+                </Box>
+
+                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 5, sm: 8}} py='6'>
+                    <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Education</Heading>
                     <Box h='4'/>
                     <ProfileItem 
                         title='Master of Science in Computer Science'
@@ -102,47 +135,14 @@ const ProfileSection = () => {
                     />
                 </Box>
 
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
-                    <Heading variant='section' fontSize={{md: "2xl", lg: "3xl"}} textAlign='left'>Experience</Heading>
-                    <Box h='4'/>
-                    <ProfileItem
-                        title='Research Assistant'
-                        shortTitle='RA'
-                        date='2021 - 2022'
-                        location='FGCN Lab, National Taiwan University, Taiwan'
-                        shortLocation='FGCN Lab, NTU, Taiwan'
-                        description='Supervisor: Prof. Ai-Chun Pang'
-                        type='research'
-                    />
-                    <ProfileItem
-                        title='Research Assistant'
-                        shortTitle='RA'
-                        date='2020 - 2021'
-                        location='CITI, Academia Sinica, Taiwan'
-                        shortLocation='CITI, Academia Sinica, Taiwan'
-                        description='Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.'
-                        type='research'
-                    />
-                    <ProfileItem
-                        title='Summer Intern'
-                        shortTitle='Summer Intern'
-                        date='2019'
-                        location='MediaTek, Taiwan'
-                        shortLocation='MediaTek, Taiwan'
-                        description='Developed computer vision algorithms.'
-                        type='work'
-                    />
-                </Box>
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
-                    <Heading veriant='section' size="lg" textAlign='left'>Publication</Heading>
+                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 5, sm: 8}} py='6'>
+                    <Heading veriant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Publication</Heading>
                     <Box h='4'/>
                     <HStack spacing={{base: 0, md: 2}}>
                         <Text fontSize={{md: "lg", lg: "xl"}} display={{ base: 'none', md: 'flex' }} textAlign='justify'> View on </Text>
                         <Link href='https://scholar.google.com.tw/citations?hl=zh-TW&user=7974KNgAAAAJ' target="_blank" style={{ textDecoration: 'none' }}>
-                            <Button leftIcon={<SiGooglescholar/>} variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}} display={{ base: 'none', sm: 'flex' }}>
-                                Google Scholar
-                            </Button>
-                            <Button variant='solid3' size='xxs' fontSize='lg' display={{ base: 'flex', sm: 'none' }} mt='1' mb='1.5' x='0'>
+                            <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}}>
+                                <Icon as={SiGooglescholar} mr='1'/>
                                 Google Scholar
                             </Button>
                         </Link>
@@ -156,25 +156,50 @@ const ProfileSection = () => {
                             <IconButton aria-label="IEEE" icon={<Icon as={SiIeee}/>} variant='solid3' size='xs' fontSize='5xl' display={{ base: 'flex', sm: 'none' }}/>
                         </Link>
                     </HStack>
-                    
                     <Box h='4'/>
+                    <ProfileItem
+                        title='Fedequal: Defending model poisoning attacks in heterogeneous federated learning'
+                        shortTitle='Fedequal: Defending model poisoning attacks in heterogeneous federated learning'
+                        date='2021'
+                        location='IEEE Global Communications Conference 2021'
+                        shortLocation='IEEE GLOBECOM 2021'
+                        description='Ling-Yuan Chen, Te-Chuan Chiu, Ai-Chun Pang, Li-Chen Cheng'
+                        type='publication'
+                    />
+                    <ProfileItem
+                        title='Dual-masking framework against two-sided model attacks in federated learning'
+                        date='2021'
+                        location='IEEE Global Communications Conference 2021'
+                        shortLocation='IEEE GLOBECOM 2021'
+                        description='Te-Chuan Chiu, Wei-Che Lin, Ai-Chun Pang, Li-Chen Cheng'
+                        type='publication'
+                    />
+                    <ProfileItem
+                        title='KinStyle: A Strong Baseline Photorealistic Kinship Face Synthesis with an Optimized StyleGAN Encoder'
+                        date='2022'
+                        location='Asian Conference on Computer Vision 2022'
+                        shortLocation='ACCV 2022'
+                        description='Li-Chen Cheng, Shu-Chuan Hsu, Pin-Hua Lee, Hsiu-Chieh Lee, Che-Hsien Lin, Jun-Cheng Chen, Chih-Yu Wang'
+                        type='publication'
+                    />
+                    <ProfileItem
+                        title='Kinship Face Synthesis Evaluation Website with Gamified Mechanism'
+                        date='2022'
+                        location='IEEE International Conference on Multimedia and Expo Workshops 2022'
+                        shortLocation='IEEE ICMEW 2022'
+                        description='Hsiu-Chieh Lee, Che-Hsien Lin, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang'
+                        type='publication'
+                    />
+                    <ProfileItem
+                        title='StyleDNA: A High-Fidelity Age and Gender Aware Kinship Face Synthesizer'
+                        date='2021'
+                        location='IEEE International Conference on Automatic Face and Gesture Recognition 2021'
+                        shortLocation='IEEE FG 2021'
+                        description='Che-Hsien Lin, Hung-Chun Chen, Li -Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang'
+                        type='publication'
+                    />
+                </Box>
 
-                </Box>
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px='8' py='6'>
-                    <Heading veriant='section' size="lg" textAlign='left'> Skill </Heading>
-                    <Box h='4'/>
-                    <List spacing={3}>
-                        <ListItem>
-                            Programming Language: Python, C/C++, MATLAB, Java, JavaScript, HTML, CSS, Verilog
-                        </ListItem>
-                        <ListItem>
-                            Framework: PyTorch, TensorFlow, OpenCV, Git, Docker, Linux, Flask, React, Bootstrap
-                        </ListItem>
-                        <ListItem>
-                            Language: English (Fluent), Mandarin (Native), Japanese (Basic)
-                        </ListItem>                            
-                    </List>
-                </Box>
             </VStack>
         </Container>
     )

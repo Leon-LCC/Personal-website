@@ -17,6 +17,7 @@ Yet, I hope you like my design.
 - 2023/02/07 - Fixed underline style in Profile
 - Busy with school work during the semester :sob:
 - 2023/05/15 - Fixed google scholar icon
+- 2023/05/18 - Finish profile page
 
 
 ## :file_folder: File Struture

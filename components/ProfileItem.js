@@ -7,15 +7,17 @@ import {
 } from "@chakra-ui/react"
 
 import {MdLocationOn, MdOutlineLocationOn} from 'react-icons/md'
-import { FaGraduationCap } from 'react-icons/fa'
-import { FaStickyNote, FaRegStickyNote } from 'react-icons/fa'
+import {FaGraduationCap } from 'react-icons/fa'
+import {FaStickyNote, FaRegStickyNote } from 'react-icons/fa'
 import {BsBriefcaseFill, BsBriefcase} from 'react-icons/bs'
 import {RiBookMarkFill, RiBookMarkLine} from 'react-icons/ri'
+import {HiOutlinePaperClip } from 'react-icons/hi'
+import {BsFillPersonFill, BsPerson} from 'react-icons/bs'
 
-const ProfileItem = ({ title, shortTitle, date, location, shortLocation, description, type }) => {
+const ProfileItem = ({ title, shortTitle, date, location, shortLocation, description, type, github, site, paperlink }) => {
     if (type === 'education' || type === 'work' || type === 'research') {
         return (
-            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md' _hover={{boxShadow: 'lg'}}>
+            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md'>
                 <HStack>
                     <Icon 
                         as={{'education': FaGraduationCap, 'work': BsBriefcaseFill, 'research': RiBookMarkFill}[type]} 
@@ -25,6 +27,7 @@ const ProfileItem = ({ title, shortTitle, date, location, shortLocation, descrip
                         pt={{base:0, md:1}}
                         ml={{base:0.5 , md:0.2}}
                         mr={{base:0.5 , md:-0.2}}
+                        mt = {{base:1 , md:0}}
                     />
                     <Text fontSize={{md: "xl", lg: "2xl"}} letterSpacing={'tighter'} fontWeight={700} display={{base: 'none', md: 'flex'}}>{title}</Text>
                     <Text fontSize='sm' letterSpacing={'tighter'} fontWeight={600} display={{base: 'flex', md: 'none'}}>{shortTitle}</Text>
@@ -44,13 +47,24 @@ const ProfileItem = ({ title, shortTitle, date, location, shortLocation, descrip
         )
     } else if (type === 'publication') {
         return (
-            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md' _hover={{boxShadow: 'lg'}}>
-                
+            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md' display={{base: 'none', md: 'grid' }}>
+                <Text fontSize={{base: 'sm', md: "lg", lg: "xl"}} letterSpacing={'tighter'}>{title}</Text>
+                <HStack>
+                    <Icon as={BsFillPersonFill} width={{base:4, lg: 5}} height={{base:4, lg: 5}} color={'#4A4A4A'} pt={1} ml='0.5' mr='0.5'/>
+                    <Text fontSize={{ base: 'xs', md: "md", lg: "lg"}} letterSpacing={'tighter'}>{description}</Text>
+                </HStack>
+                <HStack>
+                    <Icon as={MdLocationOn} width={{base:4, lg: 5}} height={{base:4, lg: 5}} color={'#556B2F'} pt={1} ml='0.5' mr='0.5'/>
+                    <Text fontSize={{ base: 'xs', md: "md", lg: "lg"}} letterSpacing={'tighter'}>{location}</Text>
+                </HStack>
+                <HStack>
+                    
+                </HStack>
             </Box>
         )
     } else {
         return (
-            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md' _hover={{boxShadow: 'lg'}}>
+            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md'>
             </Box>
         )
     }
