@@ -67,7 +67,7 @@ const ProfileSection = () => {
                     <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
                         I am currently pursuing a graduate degree in the Graduate Institute of Networking and Multimedia at National Taiwan University. 
                         My research interests lie in the fields of Deep Learning and Computer Vision, with a current focus on the security of AIoT systems such as federated learning and split learning.
-                        See my experiences below or check out my projects <NextLink href='/work'> here</NextLink>.
+                        See my experiences below or check out my projects <NextLink href='/work' passHref><Link color='#5D514A'>here</Link></NextLink>.
                     </Text>
                 </Box>
 

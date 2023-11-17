@@ -11,8 +11,8 @@ import Layout from "../components/Layout"
 import React, { useEffect, useRef } from 'react';
 
 import * as THREE from 'three';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 
 const HomePage = ({}) => {
@@ -80,6 +80,14 @@ const HomePage = ({}) => {
                     });
                 });
             });
+
+            // Resize handling
+            function onWindowResize() {
+                camera.aspect = window.innerWidth / window.innerHeight / 0.5;
+                camera.updateProjectionMatrix();
+                renderer.setSize(window.innerWidth, window.innerHeight/2);
+            }
+            window.addEventListener('resize', onWindowResize);
             
             let prevTime = performance.now();
             
@@ -108,26 +116,29 @@ const HomePage = ({}) => {
     return (
         <Layout>
             <Container centerContent mb='40' mt='20' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}}>
-                <Grid templateRows='repeat(6, 1fr)' templateColumns='repeat(3, 1fr)' gap={0} w='100%' h='100%' bg='#F7F4F2' borderRadius='lg' boxShadow='lg'>
-                    <GridItem rowSpan={4} colSpan={3}  justifyContent='Center' alignItems='Center' display='flex' h='100%'>
-                        <Box id='welcome-avatar' justifyContent='Center' alignItems='Center' display='flex' />
-                    </GridItem>
-                    <GridItem rowSpan={1} colSpan={3} justifyContent='Center' alignItems='Top' display='flex'>
-                        <Box>
-                            <Heading fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} fontWeight='bold' align='center' pb='1'>Leon Cheng</Heading>
-                            <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> You can learn more about me through...</Text>
-                        </Box>
-                    </GridItem>
-                    <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
-                        Profile
-                    </GridItem>
-                    <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
-                        Work
-                    </GridItem>
-                    <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
-                        Post
-                    </GridItem>
-                </Grid>
+                <Box id='welcome-avatar' justifyContent={{base: 'center', md: 'right'}} alignItems='center' display='flex' h='50%' w={{base: '100%', md:'50%', lg: '65%'}} zIndex='0'></Box>
+                <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-230pt', sm:'-220pt', lg:'-80'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:'linear(to-t, #FFFFFF, transparent)', md:'none'}}>
+                    <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
+                    <Text fontSize={{ md: "lg", lg: "xl"}}  display={{base: 'none', md: 'block'}} align='center'>Hey there!</Text>
+                    <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow='3px 3px #EFEBE7'>I'm Leon Cheng</Heading>
+                    <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Student @ NTU GINM | CSIE</Text>
+                    <Grid templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap={4} w='80%' mt='4' p='3'>
+                        <GridItem rowSpan={1} colSpan={3} justifyContent='Center' alignItems='Center' display='flex'>
+                            <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Learn more about me through...</Text>
+                        </GridItem>
+                        <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
+                            Profile
+                        </GridItem>
+                        <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
+                            Work
+                        </GridItem>
+                        <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
+                            Post
+                        </GridItem>
+                    </Grid>
+                </Box>
+                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' p={{base:'20', md:'16'}} mt='-8' bg='#F7F4F2'> </Box>
+                
             </Container>
             <ProfileSection />
         </Layout>
