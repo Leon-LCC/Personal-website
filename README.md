@@ -18,6 +18,7 @@ Yet, I hope you like my design.
 - Busy with school work during the semester :sob:
 - 2023/05/15 - Fixed google scholar icon
 - 2023/05/18 - Finish profile page
+- 2023/11/17 - Add Icon to the main page
 
 
 ## :file_folder: File Struture

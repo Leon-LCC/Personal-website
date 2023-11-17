@@ -33,19 +33,13 @@ const HomePage = ({}) => {
             renderer = new THREE.WebGLRenderer({ antialias: true , alpha: true});
             renderer.setClearColor(0x000000, 0);
             renderer.setPixelRatio(window.devicePixelRatio);
-            renderer.setSize(window.innerWidth/2, window.innerHeight/2);
+            renderer.setSize(window.innerWidth, window.innerHeight/2);
             document.getElementById('welcome-avatar').appendChild(renderer.domElement);
             
             // Camera setup
-            camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 1, 100);
-            camera.position.set(0, 1.6, 4.5);
-            
-            // Orbit controls
-            const controls = new OrbitControls(camera, renderer.domElement);
-            controls.enablePan = false;
-            controls.enableZoom = false;
-            controls.target.set(0, 1, 0);
-            controls.update();
+            camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight / 0.5, 1, 100);
+            camera.position.set(0, 1, 4.5);
+
             
             // GLTFLoader to load the model
             const loader = new GLTFLoader();
