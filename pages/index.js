@@ -81,14 +81,6 @@ const HomePage = ({}) => {
                 });
             });
             
-            // Resize handling
-            function onWindowResize() {
-                camera.aspect = window.innerWidth / window.innerHeight;
-                camera.updateProjectionMatrix();
-                renderer.setSize(window.innerWidth, window.innerHeight);
-            }
-            window.addEventListener('resize', onWindowResize);
-
             let prevTime = performance.now();
             
             // Animation loop
@@ -109,12 +101,6 @@ const HomePage = ({}) => {
             
             // Update initialization status
             isInitialized.current = true;
-            
-            // Clean-up function
-            return () => {
-                window.removeEventListener('resize', onWindowResize);
-                // Dispose resources if needed
-            };
         }
     }, []);
 
