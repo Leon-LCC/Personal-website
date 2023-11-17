@@ -31,8 +31,8 @@ const NavigationBar = () => {
                     </Button>
                 </Link>
                 <NextLink href='/'>
-                    <Button variant="unstyled" size='xl'>
-                        <Heading fontSize='4xl' justifyContent="center" letterSpacing={'tighter'} variant='logo' display='flex' h='100%' lineHeight='100%'>Leon</Heading>
+                    <Button variant="unstyled" size='xl' justifyContent="center" display='flex'>
+                        <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo' lineHeight='50%' my='10pt'>Leon</Heading>
                     </Button>
                 </NextLink>
             </HStack >
