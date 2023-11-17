@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import {
     Box,
     HStack,
+    VStack,
     Flex,
     Spacer,
     Text,
@@ -31,7 +32,7 @@ const NavigationBar = () => {
                 </Link>
                 <NextLink href='/'>
                     <Button variant="unstyled" size='xl'>
-                        <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo' display='flex'>Leon</Heading>
+                        <Heading fontSize='4xl' justifyContent="center" letterSpacing={'tighter'} variant='logo' display='flex' h='100%' lineHeight='100%'>Leon</Heading>
                     </Button>
                 </NextLink>
             </HStack >
