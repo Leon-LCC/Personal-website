@@ -143,7 +143,7 @@ const ProfileSection = () => {
                         <Link href='https://scholar.google.com.tw/citations?hl=zh-TW&user=7974KNgAAAAJ' target="_blank" style={{ textDecoration: 'none' }}>
                             <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}}>
                                 <Icon as={SiGooglescholar} mr='1'/>
-                                Google Scholar
+                                <Text display="flex">Google Scholar </Text>
                             </Button>
                         </Link>
                         <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify' display={{ base: 'none', md: 'flex' }}> or </Text>
