@@ -8,6 +8,7 @@ import {
     Button, 
     Link
 } from "@chakra-ui/react"
+import { useColorModeValue } from "@chakra-ui/react"
 import ProfileSection from "../components/Profile"
 import Layout from "../components/Layout"
 
@@ -124,7 +125,7 @@ const HomePage = ({}) => {
         <Layout>
             <Container centerContent mb='40' mt='20' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}}>
                 <Box id='welcome-avatar' justifyContent={{base: 'center', md: 'right'}} alignItems='center' display='flex' h='50%' w={{base: '100%', md:'50%', lg: '65%'}} zIndex='0'></Box>
-                <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-210pt', sm:'-220pt', lg:'-80'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:'linear(to-t, #FFFFFF, transparent)', md:'none'}}>
+                <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-210pt', sm:'-220pt', lg:'-80'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:useColorModeValue("linear(to-t, #FFFFFF, transparent)", "linear(to-t, #262626, transparent)"), md:'none'}}>
                     <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
                     <Text fontSize={{ md: "lg", lg: "xl"}}  display={{base: 'none', md: 'block'}} align='center'>Hey there!</Text>
                     <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow='3px 3px #EFEBE7'>I'm Leon Cheng</Heading>
@@ -154,7 +155,8 @@ const HomePage = ({}) => {
                         </GridItem>
                     </Grid>
                 </Box>
-                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' p={{base:'20', md:'20'}} mt='-14' bg='#F7F4F2'> </Box>
+                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' p={{base:'20', md:'20'}} mt='-14' bg={useColorModeValue("#F7F4F2", "#262626")}>
+                </Box>
                 
             </Container>
             <ProfileSection />
