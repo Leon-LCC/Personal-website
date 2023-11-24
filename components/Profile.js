@@ -9,9 +9,6 @@ import {
     Button,
     HStack,
     IconButton,
-    List,
-    ListItem,
-    ListIcon,
     Icon
 } from "@chakra-ui/react"
 import { IoLogoGithub , IoLogoLinkedin } from 'react-icons/io5';
@@ -20,6 +17,7 @@ import { MdOutlineEmail } from 'react-icons/md';
 import Image from "next/image";
 import NextLink from 'next/link';
 import ProfileItem from "./ProfileItem";
+
 
 const ProfileSection = () => {
     return (
@@ -61,7 +59,7 @@ const ProfileSection = () => {
                         </HStack>
                     </Box>
                 </Box>
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 6, sm: 8}} py='6'>
+                <Box w='100%' px={{base: 6, sm: 8}} py='6'>
                     <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
                     <Box h='4'/>
                     <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
@@ -71,7 +69,7 @@ const ProfileSection = () => {
                     </Text>
                 </Box>
 
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 5, sm: 8}} py='6'>
+                <Box w='100%' px={{base: 5, sm: 8}} py='6'>
                     <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Experience</Heading>
                     <Box h='4'/>
                     <ProfileItem
@@ -86,7 +84,7 @@ const ProfileSection = () => {
                     <ProfileItem
                         title='Research Assistant'
                         shortTitle='RA'
-                        date='2020 - 2021'
+                        date='2021 - 2022'
                         location='CITI, Academia Sinica, Taiwan'
                         shortLocation='CITI, Academia Sinica, Taiwan'
                         description='Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.'
@@ -103,7 +101,7 @@ const ProfileSection = () => {
                     />
                 </Box>
 
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 5, sm: 8}} py='6'>
+                <Box w='100%' px={{base: 5, sm: 8}} py='6'>
                     <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Education</Heading>
                     <Box h='4'/>
                     <ProfileItem 
@@ -135,7 +133,7 @@ const ProfileSection = () => {
                     />
                 </Box>
 
-                <Box w='100%' borderRadius='xl' boxShadow='xl' bg='#EFEBE7' px={{base: 5, sm: 8}} py='6'>
+                <Box w='100%' px={{base: 5, sm: 8}} py='6'>
                     <Heading veriant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Publication</Heading>
                     <Box h='4'/>
                     <HStack spacing={{base: 0, md: 2}}>

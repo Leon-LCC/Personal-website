@@ -17,7 +17,7 @@ import {BsFillPersonFill, BsPerson} from 'react-icons/bs'
 const ProfileItem = ({ title, shortTitle, date, location, shortLocation, description, type, github, site, paperlink }) => {
     if (type === 'education' || type === 'work' || type === 'research') {
         return (
-            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md'>
+            <Box alignItems="center" w='100%' position='relative' px='4' py='2' mb='2' bg='#FFFFFF' borderRadius='lg' boxShadow='md'>
                 <HStack>
                     <Icon 
                         as={{'education': FaGraduationCap, 'work': BsBriefcaseFill, 'research': RiBookMarkFill}[type]} 
@@ -47,7 +47,7 @@ const ProfileItem = ({ title, shortTitle, date, location, shortLocation, descrip
         )
     } else if (type === 'publication') {
         return (
-            <Box alignItems="center" w='100%' position='relative' bg='#F7F4F2' borderRadius='lg' px='4' py='2' mb='2' boxShadow='md' display={{base: 'none', md: 'grid' }}>
+            <Box alignItems="center" w='100%' position='relative' px='4' py='2' mb='2' bg='#FFFFFF' borderRadius='lg' boxShadow='md' display={{base: 'none', md: 'grid' }}> 
                 <Text fontSize={{base: 'sm', md: "lg", lg: "xl"}} letterSpacing={'tighter'}>{title}</Text>
                 <HStack>
                     <Icon as={BsFillPersonFill} width={{base:4, lg: 5}} height={{base:4, lg: 5}} color={'#4A4A4A'} pt={1} ml='0.5' mr='0.5'/>

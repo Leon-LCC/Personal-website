@@ -1,9 +1,12 @@
 import {
     Container,
-    Flex,
     Heading,
     Text,
-    Grid, GridItem, Box,
+    Grid, 
+    GridItem, 
+    Box, 
+    Button, 
+    Link
 } from "@chakra-ui/react"
 import ProfileSection from "../components/Profile"
 import Layout from "../components/Layout"
@@ -12,7 +15,11 @@ import React, { useEffect, useRef } from 'react';
 
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
+import { FaUser } from "react-icons/fa";
+import { RiQuillPenLine } from "react-icons/ri";
+import { FaLaptopCode } from "react-icons/fa";
+
+
 
 
 const HomePage = ({}) => {
@@ -117,27 +124,37 @@ const HomePage = ({}) => {
         <Layout>
             <Container centerContent mb='40' mt='20' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}}>
                 <Box id='welcome-avatar' justifyContent={{base: 'center', md: 'right'}} alignItems='center' display='flex' h='50%' w={{base: '100%', md:'50%', lg: '65%'}} zIndex='0'></Box>
-                <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-230pt', sm:'-220pt', lg:'-80'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:'linear(to-t, #FFFFFF, transparent)', md:'none'}}>
+                <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-210pt', sm:'-220pt', lg:'-80'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:'linear(to-t, #FFFFFF, transparent)', md:'none'}}>
                     <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
                     <Text fontSize={{ md: "lg", lg: "xl"}}  display={{base: 'none', md: 'block'}} align='center'>Hey there!</Text>
                     <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow='3px 3px #EFEBE7'>I'm Leon Cheng</Heading>
                     <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Student @ NTU GINM | CSIE</Text>
-                    <Grid templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap={4} w='80%' mt='4' p='3'>
+                    <Grid templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap={4} w='100%' mt='4' p='3' mb='-2'>
                         <GridItem rowSpan={1} colSpan={3} justifyContent='Center' alignItems='Center' display='flex'>
-                            <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Learn more about me through...</Text>
+                            <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Learn more about me through my...</Text>
+                        </GridItem>
+                        <GridItem rowSpan={1} colSpan={1} justifyContent='Right' alignItems='Center' display='flex'>
+                            <Link href='/#profile'>
+                                <Button leftIcon={<FaUser />} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}}> Profile </Button>
+                            </Link>
                         </GridItem>
                         <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
-                            Profile
+                            <Link href='/work'>
+                                <Button leftIcon={<FaLaptopCode />} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}} pt='1'> 
+                                    <Text mb='1'>Work</Text>
+                                </Button>
+                            </Link>
                         </GridItem>
-                        <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
-                            Work
-                        </GridItem>
-                        <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
-                            Post
+                        <GridItem rowSpan={1} colSpan={1} justifyContent='Left' alignItems='Center' display='flex'>
+                            <Link href='/post'>
+                                <Button leftIcon={<RiQuillPenLine/>} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}} pt='1'>
+                                    <Text mb='1'>Post</Text>
+                                </Button>
+                            </Link>
                         </GridItem>
                     </Grid>
                 </Box>
-                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' p={{base:'20', md:'16'}} mt='-8' bg='#F7F4F2'> </Box>
+                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' p={{base:'20', md:'20'}} mt='-14' bg='#F7F4F2'> </Box>
                 
             </Container>
             <ProfileSection />
