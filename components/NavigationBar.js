@@ -36,12 +36,15 @@ const NavigationBar = () => {
                 </Link>
                 <NextLink href='/'>
                     <Button variant="unstyled" size='xl' justifyContent="center" display='flex'>
-                        <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo' lineHeight='50%' my='10pt'>Leon</Heading>
+                        <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo' lineHeight='100%' my='4pt'>Leon</Heading>
                     </Button>
                 </NextLink>
             </HStack >
+
             <Spacer />
+
             <IconButton aria-label="Theme" bg={useColorModeValue("gray.400", "#F7F4F2")} color={useColorModeValue("whiteAlpha.900", "black")} colorScheme={useColorModeValue("black", "black")} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode} display={{ base: 'flex', md: 'none' }} mr='15pt'/>
+            
             <Box  display={{ base: 'flex', md: 'none' }} bg={useColorModeValue("#faf5f0", "#303030")}>
                 <Menu>
                     <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label='Options' bg={useColorModeValue("#faf5f0", "#303030")}>
@@ -62,6 +65,7 @@ const NavigationBar = () => {
                     </MenuList>
                 </Menu>
             </Box>
+
             <HStack spacing={6} display={{ base: 'none', md: 'flex' }}>
                 <Button variant='route' size='xs' height={{base: '40px'}}>
                     <NextLink href='/'>
@@ -85,6 +89,7 @@ const NavigationBar = () => {
                 </Button>
                 <IconButton aria-label="Theme" bg={useColorModeValue("gray.400", "#F7F4F2")} color={useColorModeValue("whiteAlpha.900", "black")} colorScheme={useColorModeValue("black", "black")} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode} />
             </HStack >
+            
         </Flex>
     )
 }

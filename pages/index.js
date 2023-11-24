@@ -136,20 +136,22 @@ const HomePage = ({}) => {
                         </GridItem>
                         <GridItem rowSpan={1} colSpan={1} justifyContent='Right' alignItems='Center' display='flex'>
                             <Link href='/#profile'>
-                                <Button leftIcon={<FaUser />} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}}> Profile </Button>
+                                <Button leftIcon={<FaUser />} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}}>
+                                    <Text my='20pt'>Profile</Text> 
+                                </Button>
                             </Link>
                         </GridItem>
                         <GridItem rowSpan={1} colSpan={1} justifyContent='Center' alignItems='Center' display='flex'>
                             <Link href='/work'>
                                 <Button leftIcon={<FaLaptopCode />} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}} pt='1'> 
-                                    <Text mb='1'>Work</Text>
+                                    <Text mx='2pt' my='20pt'>Work</Text>
                                 </Button>
                             </Link>
                         </GridItem>
                         <GridItem rowSpan={1} colSpan={1} justifyContent='Left' alignItems='Center' display='flex'>
                             <Link href='/post'>
                                 <Button leftIcon={<RiQuillPenLine/>} w='100%' display='flex' variant='solid3' size={{base:'md', lg:'lg'}} fontSize={{ base: "xl", lg: "2xl"}} pt='1'>
-                                    <Text mb='1'>Post</Text>
+                                    <Text my='20pt'>Post</Text>
                                 </Button>
                             </Link>
                         </GridItem>
