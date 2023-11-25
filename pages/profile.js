@@ -152,7 +152,7 @@ const ProfileSection = () => {
                             <HStack spacing={{base: 0, md: 2}}>
                                 <Text fontSize={{md: "lg", lg: "xl"}} display={{ base: 'none', md: 'flex' }} textAlign='justify'> View on </Text>
                                 <Link href='https://scholar.google.com.tw/citations?hl=zh-TW&user=7974KNgAAAAJ' target="_blank" style={{ textDecoration: 'none' }}>
-                                    <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}} fontSize="md">
+                                    <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}}>
                                         <Icon as={SiGooglescholar} mr='1'/>
                                         <Text display="flex">Google Scholar </Text>
                                     </Button>
