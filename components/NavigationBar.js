@@ -28,15 +28,15 @@ const NavigationBar = () => {
     
     return (
         <Flex justifyContent="center" alignItems="center" py='1' px={{base:6, md:12, lg:24}} position='fixed' top='0' w='100%' bg={useColorModeValue("#faf5f0", "#303030")} zIndex='100'>
-            <HStack spacing={3} >
+            <HStack spacing={3}>
                 <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target="_blank">
                     <Button variant="unstyled" size='lg'>
-                        <Image src="/Images/logo.gif" alt="logo" width='70%' height='49%' layout='fixed'/>
+                        <Image src="/Images/logo.gif" alt="logo" width='70' height='48'/>
                     </Button>
                 </Link>
                 <NextLink href='/'>
-                    <Button variant="unstyled" size='xl' justifyContent="center" display='flex'>
-                        <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo' lineHeight='100%' my='4pt'>Leon</Heading>
+                    <Button variant="unstyled" size='xl' justifyContent="center" alignItems="center">
+                        <Heading fontSize='4xl' letterSpacing={'tighter'} variant='logo'>Leon</Heading>
                     </Button>
                 </NextLink>
             </HStack >
@@ -53,7 +53,7 @@ const NavigationBar = () => {
                         <NextLink href='/'>
                             <MenuItem>Home</MenuItem>
                         </NextLink>
-                        <NextLink href='/#profile'>
+                        <NextLink href='/profile'>
                             <MenuItem>Profile</MenuItem>
                         </NextLink>
                         <NextLink href='/work'>
@@ -73,7 +73,7 @@ const NavigationBar = () => {
                     </NextLink>
                 </Button>
                 <Button variant='route' size='xs' height={{base: '40px'}}>
-                    <NextLink href='/#profile'>
+                    <NextLink href='/profile'>
                         <Text fontSize='2xl' letterSpacing={'tighter'} fontWeight={100}>Profile</Text>
                     </NextLink>
                 </Button>
