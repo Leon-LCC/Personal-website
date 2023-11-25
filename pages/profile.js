@@ -93,6 +93,7 @@ const ProfileSection = () => {
                                 shortLocation='FGCN Lab, NTU, Taiwan'
                                 description='Supervisor: Prof. Ai-Chun Pang'
                                 type='research'
+                                site='https://www.csie.ntu.edu.tw/~acpang/fgcn/index.html'
                             />
                             <ProfileItem
                                 title='Research Assistant'
@@ -102,6 +103,7 @@ const ProfileSection = () => {
                                 shortLocation='CITI, Academia Sinica, Taiwan'
                                 description='Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.'
                                 type='research'
+                                site='https://www.citi.sinica.edu.tw/en/'
                             />
                             <ProfileItem
                                 title='Summer Intern'
@@ -111,6 +113,7 @@ const ProfileSection = () => {
                                 shortLocation='MediaTek, Taiwan'
                                 description='Developed computer vision algorithms.'
                                 type='work'
+                                site='https://www.mediatek.tw/'
                             />
                         </Box>
 
@@ -125,6 +128,7 @@ const ProfileSection = () => {
                                 shortLocation='NTU, Taiwan'
                                 description='Supervisor: Prof. Ai-Chun Pang'
                                 type='education'
+                                site='https://www.ntu.edu.tw/english/'
                             />
                             <ProfileItem 
                                 title='Bachelor of Science in Computer Science' 
@@ -134,6 +138,7 @@ const ProfileSection = () => {
                                 shortLocation='NTU, Taiwan'
                                 description='GPA: 3.7/4.3' 
                                 type='education'
+                                site='https://www.ntu.edu.tw/english/'
                             />
                             <ProfileItem 
                                 title='Bachelor of Arts in Economics' 
@@ -143,6 +148,7 @@ const ProfileSection = () => {
                                 shortLocation='NTU, Taiwan'
                                 description='Double Major'
                                 type='education'
+                                site='https://www.ntu.edu.tw/english/'
                             />
                         </Box>
 
@@ -176,6 +182,7 @@ const ProfileSection = () => {
                                 shortLocation='IEEE GLOBECOM 2021'
                                 description='Ling-Yuan Chen, Te-Chuan Chiu, Ai-Chun Pang, Li-Chen Cheng'
                                 type='publication'
+                                paperlink='https://ieeexplore.ieee.org/abstract/document/9685082/'
                             />
                             <ProfileItem
                                 title='Dual-masking framework against two-sided model attacks in federated learning'
@@ -184,6 +191,7 @@ const ProfileSection = () => {
                                 shortLocation='IEEE GLOBECOM 2021'
                                 description='Te-Chuan Chiu, Wei-Che Lin, Ai-Chun Pang, Li-Chen Cheng'
                                 type='publication'
+                                paperlink='https://ieeexplore.ieee.org/abstract/document/9685701/'
                             />
                             <ProfileItem
                                 title='KinStyle: A Strong Baseline Photorealistic Kinship Face Synthesis with an Optimized StyleGAN Encoder'
@@ -192,6 +200,7 @@ const ProfileSection = () => {
                                 shortLocation='ACCV 2022'
                                 description='Li-Chen Cheng, Shu-Chuan Hsu, Pin-Hua Lee, Hsiu-Chieh Lee, Che-Hsien Lin, Jun-Cheng Chen, Chih-Yu Wang'
                                 type='publication'
+                                paperlink='https://openaccess.thecvf.com/content/ACCV2022/html/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.html'
                             />
                             <ProfileItem
                                 title='Kinship Face Synthesis Evaluation Website with Gamified Mechanism'
@@ -200,6 +209,7 @@ const ProfileSection = () => {
                                 shortLocation='IEEE ICMEW 2022'
                                 description='Hsiu-Chieh Lee, Che-Hsien Lin, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang'
                                 type='publication'
+                                paperlink='https://ieeexplore.ieee.org/abstract/document/9859503'
                             />
                             <ProfileItem
                                 title='StyleDNA: A High-Fidelity Age and Gender Aware Kinship Face Synthesizer'
@@ -208,6 +218,7 @@ const ProfileSection = () => {
                                 shortLocation='IEEE FG 2021'
                                 description='Che-Hsien Lin, Hung-Chun Chen, Li -Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang'
                                 type='publication'
+                                paperlink='https://ieeexplore.ieee.org/abstract/document/9666998'
                             />
                         </Box>
                     </VStack>

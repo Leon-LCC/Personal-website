@@ -134,7 +134,7 @@ const HomePage = ({}) => {
                     <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-210pt', sm:'-220pt', lg:'-80'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:useColorModeValue("linear(to-t, #FFFFFF, transparent)", "linear(to-t, #262626, transparent)"), md:'none'}}>
                         <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
                         <Text fontSize={{ md: "lg", lg: "xl"}}  display={{base: 'none', md: 'block'}} align='center'>Hey there!</Text>
-                        <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow='3px 3px #EFEBE7'>I'm Leon Cheng</Heading>
+                        <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow={useColorModeValue("3px 3px #EFEBE7", "3px 3px #7E7E7E")}>I'm Leon Cheng</Heading>
                         <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Student @ NTU GINM | CSIE</Text>
                         <Grid templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap={4} w='100%' mt='4' p='3' mb='-2'>
                             <GridItem rowSpan={1} colSpan={3} justifyContent='Center' alignItems='Center' display='flex'>

@@ -30,8 +30,8 @@ const NavigationBar = () => {
         <Flex justifyContent="center" alignItems="center" py='1' px={{base:6, md:12, lg:24}} position='fixed' top='0' w='100%' bg={useColorModeValue("#faf5f0", "#303030")} zIndex='100'>
             <HStack spacing={3}>
                 <Link href='https://www.youtube.com/watch?v=dQw4w9WgXcQ' target="_blank">
-                    <Button variant="unstyled" size='lg'>
-                        <Image src="/Images/logo.gif" alt="logo" width='70' height='48'/>
+                    <Button variant="unstyled" size='lg' pb='10pt'>
+                        <Image src="/Images/logo.gif" alt="logo" width='60' height='40'/>
                     </Button>
                 </Link>
                 <NextLink href='/'>
