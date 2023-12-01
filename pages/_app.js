@@ -7,15 +7,15 @@ import { AnimatePresence } from 'framer-motion'
 
 const MyApp = ({ Component, pageProps }) => {
   return (
-    <AnimatePresence mode="wait" exitBeforeEnter initial={true} onExitComplete={() => {
+    <ChakraProvider theme={theme} cookies={pageProps.cookies}>
+      <AnimatePresence mode="wait" exitBeforeEnter initial={true} onExitComplete={() => {
         if (typeof window !== 'undefined') {
           window.scrollTo({ top: 0 })
         }
       }}>
-      <ChakraProvider theme={theme}>
         <Component {...pageProps}/>
-      </ChakraProvider>
-    </AnimatePresence>
+      </AnimatePresence>
+    </ChakraProvider>
   )
 }
 

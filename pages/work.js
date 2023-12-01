@@ -1,40 +1,71 @@
-import {
-    Container,
-    Flex,
-    Box,
-    VStack,
-} from "@chakra-ui/react"
-import Layout from "../components/Layout"
+import { Container, Flex, Box } from "@chakra-ui/react";
+import Layout from "../components/Layout";
+import WorkItem from "../components/WorkItem";
+import WorkPage from "../components/WorkPage";
+import { useRouter } from 'next/router';
 
-import { motion } from "framer-motion";
+import { useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
+import MotionLayout from "../components/MotionLayout";
 
 
-const ProjectBlock = () => {
-    const variants = {
-        hidden: { opacity: 0, x: 0, y: 20 },
-        enter: { opacity: 1, x: 0, y: 0 },
-        exit: { opacity: 0, x: 0, y: 20 }
+
+const WorkSection = () => {
+    const router = useRouter();
+    
+    const renderWorkPage = () => {
+        switch (router.asPath) {
+            case '/work#project1':
+                return (
+                    <WorkPage 
+                        id="project1"
+                        imageSrc="/Images/mystie-large.png"
+                        markdownSrc="/Markdown/Project1.md"
+                    />
+                );
+            case '/work#project2':
+                return (
+                    <WorkPage 
+                        id="project2"
+                        imageSrc="/Images/mystie-large.png"
+                        markdownSrc="/Markdown/Project2.md"
+                    />
+                );
+            default:
+                return (
+                    <Container centerContent maxWidth='90%' mt='100pt' id='work'>
+                        <MotionLayout>
+                            <Flex flexWrap="wrap" w="100%">
+                                <Box width={{ base: '100%', xl: '50%' }} padding="6">
+                                    <WorkItem
+                                        id="project1"
+                                        title="Project1" 
+                                        imageSrc="/Images/mysite.jpg"
+                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl."
+                                    />
+                                </Box>
+                                <Box width={{ base: '100%', xl: '50%' }} padding="6">
+                                    <WorkItem
+                                        id="project2"
+                                        title="Project2"
+                                        imageSrc="/Images/mysite.jpg"
+                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl."
+                                    />
+                                </Box>
+                            </Flex>
+                        </MotionLayout>
+                    </Container>
+                )
+        }
     }
 
     return (
         <Layout>
-            <motion.article initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 1, type: 'easeInOut' }} style={{ position: 'relative' }}>
-                <Container centerContent maxWidth='70%' my='60' py='4' id='project'>
-                    <VStack spacing='2' w='100%'>
-                        <Box w='100%' bg='teal.400'>
-                            Project
-                        </Box>
-                        <Box w='100%' bg='teal.500'>
-                            Project
-                        </Box>
-                        <Box w='100%' bg='teal.600'>
-                            Project
-                        </Box>
-                    </VStack>
-                </Container>
-            </motion.article>
+            {renderWorkPage()}
         </Layout>
     )
 }
 
-export default ProjectBlock
+
+export default dynamic(() => Promise.resolve(WorkSection), { ssr: false });

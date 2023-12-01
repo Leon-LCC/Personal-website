@@ -12,42 +12,38 @@ import {
     Icon
 } from "@chakra-ui/react"
 import { useColorModeValue } from "@chakra-ui/react"
-import { IoLogoGithub , IoLogoLinkedin } from 'react-icons/io5';
+import { IoLogoGithub , IoLogoLinkedin} from 'react-icons/io5';
 import {SiGooglescholar, SiIeee} from 'react-icons/si';
 import { MdOutlineEmail } from 'react-icons/md';
+
 import Image from "next/image";
 import NextLink from 'next/link';
 import ProfileItem from "../components/ProfileItem";
 import Layout from "../components/Layout"
 
-import { motion } from "framer-motion";
+import MotionLayout from "../components/MotionLayout";
 
 
 
 const ProfileSection = () => {
-    const variants = {
-        hidden: { opacity: 0, x: 0, y: 20 },
-        enter: { opacity: 1, x: 0, y: 0 },
-        exit: { opacity: 0, x: 0, y: 20 }
-    }
     return (
         <Layout>
-            <motion.article key="home" initial="hidden" animate="enter" exit="exit" variants={variants} transition={{ duration: 1, type: "easeInOut" }} style={{ position: "relative" }}>
+           <MotionLayout>
                 <Container centerContent mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '90%', lg: '80%'}}>
                     <VStack w='100%' align='center' gap='8' py='10' px={{base: 6, md: 16}} borderRadius='xl' boxShadow='xl' bg={useColorModeValue("#F7F4F2", "#262626")}>
                         <Box display={{ md: 'flex' }} mt={{ base: 0, md: 4 }}>
                             <Box flexShrink={0}>
-                                <Center display={{ base: 'none', lg: 'flex' }} overflow='hidden' borderRadius="full" borderColor="#685950" borderWidth={4} borderStyle="solid">
+                                <Center display={{ base: 'none', lg: 'flex' }} overflow='hidden' borderRadius="full" borderWidth={4} borderStyle="solid" borderColor={useColorModeValue("#685950", "whiteAlpha.700")}> 
                                     <Image src="/Images/ID.jpg" alt=" Profile Photo" width={200} height={200}/>
                                 </Center>
-                                <Center display={{ base: 'flex', lg: 'none' }} mx={{base:16, md: 0 }} overflow='hidden' borderRadius="full" borderColor="#685950" borderWidth={4} borderStyle="solid">
+                                <Center display={{ base: 'flex', lg: 'none' }} mx={{base:16, md: 0 }} overflow='hidden' borderRadius="full" borderColor={useColorModeValue("#685950", "whiteAlpha.700")} borderWidth={4} borderStyle="solid">
                                     <Image src="/Images/ID.jpg" alt=" Profile Photo" width={170} height={170} />
                                 </Center>
                             </Box>
                             <Box mt={{ base: 4, md: 0 }} ml={{ md: 3, xl: 16}}>
-                                <Box m='4' p='2'>
+                                <Box m='4' p='2' align='center'>
                                     <Heading fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} fontWeight='bold' align='center' pb='1'>Li-Chen Cheng</Heading>
-                                    <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> CS graduate student at NTU</Text>
+                                    <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center' pl='12pt'> CS graduate student @ NTU</Text>
                                 </Box>
                                 <HStack spacing={{base:8, xl: 2}} w='100%' justifyContent='center'>
                                     <Box>
@@ -71,7 +67,7 @@ const ProfileSection = () => {
                                 </HStack>
                             </Box>
                         </Box>
-                        <Box w='100%' px={{base: 6, sm: 8}} py='6'>
+                        <Box w='100%' px={{base: 2, sm: 8}} py='6'>
                             <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
                             <Box h='4'/>
                             <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
@@ -82,7 +78,7 @@ const ProfileSection = () => {
                             </Text>
                         </Box>
 
-                        <Box w='100%' px={{base: 5, sm: 8}} py='6'>
+                        <Box w='100%' px={{base: 2, sm: 8}} py='6'>
                             <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Experience</Heading>
                             <Box h='4'/>
                             <ProfileItem
@@ -117,7 +113,7 @@ const ProfileSection = () => {
                             />
                         </Box>
 
-                        <Box w='100%' px={{base: 5, sm: 8}} py='6'>
+                        <Box w='100%' px={{base: 2, sm: 8}} py='6'>
                             <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Education</Heading>
                             <Box h='4'/>
                             <ProfileItem 
@@ -126,7 +122,7 @@ const ProfileSection = () => {
                                 date='2022 - Pres.'
                                 location='National Taiwan University, Taiwan' 
                                 shortLocation='NTU, Taiwan'
-                                description='Supervisor: Prof. Ai-Chun Pang'
+                                description='GPA: 4.3/4.3'
                                 type='education'
                                 site='https://www.ntu.edu.tw/english/'
                             />
@@ -152,7 +148,7 @@ const ProfileSection = () => {
                             />
                         </Box>
 
-                        <Box w='100%' px={{base: 5, sm: 8}} py='6'>
+                        <Box w='100%' px={{base: 2, sm: 8}} py='6'>
                             <Heading veriant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>Publication</Heading>
                             <Box h='4'/>
                             <HStack spacing={{base: 0, md: 2}}>
@@ -223,7 +219,7 @@ const ProfileSection = () => {
                         </Box>
                     </VStack>
                 </Container>
-            </motion.article>
+            </MotionLayout>
         </Layout>
     )
 }

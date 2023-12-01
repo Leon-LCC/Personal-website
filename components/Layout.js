@@ -9,6 +9,14 @@ const Layout = ({ children }) => {
             <Head>
                 <title>Leon's HomePage</title>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name="description" content="Leon's HomePage" />
+                <meta name="keywords" content="Li-Chen Cheng, Leon Cheng, Leon's HomePage" />
+                <meta name="author" content="Li-Chen Cheng" />
+                <meta name="og:title" property="og:title" content="Leon's HomePage" />
+                <meta name="og:description" property="og:description" content="Leon's HomePage" />
+                <meta name="og:type" property="og:type" content="website" />
+                <link rel="shortcut icon" href="/Icon/favicon.ico" type="image/x-icon" />
+                <link rel="apple-touch-icon" href="/Icon/apple-touch-icon.png" />   
             </Head>
                 <NavigationBar />
                 {children}
