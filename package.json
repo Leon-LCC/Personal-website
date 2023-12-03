@@ -31,13 +31,22 @@
     "@fontsource/anton": "^5.0.17",
     "@fontsource/miriam-libre": "^4.5.11",
     "@fontsource/mirza": "^4.5.11",
+    "@nikolovlazar/chakra-ui-prose": "^1.2.1",
+    "chakra-ui-markdown-renderer": "^4.1.0",
     "framer-motion": "^6.5.1",
+    "gray-matter": "^4.0.3",
+    "mathjax3-react": "^1.2.0",
     "next": "^14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",
-    "remark": "^15.0.1",
+    "react-katex": "^3.0.1",
+    "react-markdown": "^8.0.7",
+    "rehype-katex": "^7.0.0",
+    "remark-gemoji": "^8.0.0",
+    "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1",
+    "remark-mdx": "^3.0.0",
     "three": "^0.158.0"
   },
   "devDependencies": {
@@ -45,6 +54,8 @@
     "eslint-config-next": "^12.1.6",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.7.1"
+    "prettier": "^2.7.1",
+    "rehype-mathjax": "^5.0.0",
+    "remark-math": "^5.0.0"
   }
 }

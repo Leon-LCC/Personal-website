@@ -15,8 +15,8 @@ const Layout = ({ children }) => {
                 <meta name="og:title" property="og:title" content="Leon's HomePage" />
                 <meta name="og:description" property="og:description" content="Leon's HomePage" />
                 <meta name="og:type" property="og:type" content="website" />
-                <link rel="shortcut icon" href="/Icon/favicon.ico" type="image/x-icon" />
-                <link rel="apple-touch-icon" href="/Icon/apple-touch-icon.png" />   
+                <link rel="shortcut icon" href="/Images/Icons/favicon.ico" type="image/x-icon" />
+                <link rel="apple-touch-icon" href="/Images/Icons/apple-touch-icon.png" />   
             </Head>
                 <NavigationBar />
                 {children}

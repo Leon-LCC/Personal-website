@@ -12,9 +12,9 @@ import Image from "next/image";
 import NextLink from 'next/link';
 
 
-const WorkItem = ({ name, title, imageSrc, description }) => {
+const PostItem = ({ name, title, imageSrc, description }) => {
     return (
-        <NextLink href={`/work/${name}`}>
+        <NextLink href={`/post/${name}`}>
             <Box borderWidth="1px" borderRadius="lg" p="8" width="100%" bg={useColorModeValue("#F7F4F2", "#262626")} _hover={{ boxShadow: 'xl' }} h='100%'>
                 <Flex flexWrap="wrap" alignItems='center' h='100%'>
                     <Center width={{ base: '100%', md: '40%' }} mb={{ base: '4', md: '0' }}>
@@ -36,4 +36,4 @@ const WorkItem = ({ name, title, imageSrc, description }) => {
     );
 };
 
-export default WorkItem;
+export default PostItem;

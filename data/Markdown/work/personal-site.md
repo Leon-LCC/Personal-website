@@ -1,0 +1,12 @@
+---
+title: My Portfolio
+author: Leon Cheng
+date: December 2023
+description: A personal website built with React, Next.js, and Chakra UI. Some cool animations are also added with Framer Motion and Three.js.
+image: /Images/mystie-large.png
+github: "https://github.com/Leon-LCC/Personal-website"
+site: "https://personal-website-leon-lcc.vercel.app/"
+tags: ["#React", "#Chakra UI", "#Next.js", "#Three.js", "#Framer Motion", "#Markdown", "#Vercel"]
+---
+# My Portfolio
+(Work in progress)

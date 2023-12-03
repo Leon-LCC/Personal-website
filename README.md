@@ -16,3 +16,4 @@ $PROJECT_ROOT
 
 
 ## :memo: Reference
+- [How To Create a Markdown Blog With Next.js](https://tina.io/blog/simple-markdown-blog-nextjs/)

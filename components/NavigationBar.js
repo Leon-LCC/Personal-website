@@ -13,11 +13,10 @@ import {
     MenuList,
     MenuItem,
     IconButton,
+    useColorModeValue,
+    useColorMode,
 } from '@chakra-ui/react'
-import { HamburgerIcon } from "@chakra-ui/icons";
-import { useColorModeValue } from "@chakra-ui/react";
-import { SunIcon, MoonIcon } from '@chakra-ui/icons';
-import { useColorMode } from "@chakra-ui/react";
+import { SunIcon, MoonIcon , HamburgerIcon } from '@chakra-ui/icons';
 
 
 
@@ -42,7 +41,7 @@ const NavigationBar = () => {
 
             <Spacer />
 
-            <IconButton aria-label="Theme" bg={useColorModeValue("gray.400", "#F7F4F2")} color={useColorModeValue("whiteAlpha.900", "black")} colorScheme={useColorModeValue("black", "black")} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode} display={{ base: 'flex', md: 'none' }} mr='15pt'/>
+            <IconButton aria-label="Theme" bg={useColorModeValue("gray.400", "#F7F4F2")} color={useColorModeValue("whiteAlpha.900", "black")} colorScheme="black" icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode} display={{ base: 'flex', md: 'none' }} mr='15pt'/>
             
 
             <Box  display={{ base: 'flex', md: 'none' }} bg={useColorModeValue("#faf5f0", "#303030")}>
@@ -87,7 +86,7 @@ const NavigationBar = () => {
                         <Text fontSize='2xl' letterSpacing={'tighter'} fontWeight={100}>Post</Text>
                     </NextLink>
                 </Button>
-                <IconButton aria-label="Theme" bg={useColorModeValue("gray.400", "#F7F4F2")} color={useColorModeValue("whiteAlpha.900", "black")} colorScheme={useColorModeValue("black", "black")} icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode} />
+                <IconButton aria-label="Theme" bg={useColorModeValue("gray.400", "#F7F4F2")} color={useColorModeValue("whiteAlpha.900", "black")} colorScheme="black" icon={useColorModeValue(<MoonIcon />, <SunIcon />)} onClick={toggleColorMode} />
             </HStack >
             
         </Flex>

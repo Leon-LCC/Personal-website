@@ -1,71 +1,52 @@
-import { Container, Flex, Box } from "@chakra-ui/react";
-import Layout from "../components/Layout";
+import { 
+    Container, 
+    Flex, 
+    Box,
+    Text,
+    Heading,
+    useColorModeValue,
+} from "@chakra-ui/react";
+
 import WorkItem from "../components/WorkItem";
-import WorkPage from "../components/WorkPage";
-import { useRouter } from 'next/router';
-
-import { useEffect } from 'react';
-import dynamic from 'next/dynamic';
-
 import MotionLayout from "../components/MotionLayout";
 
 
 
 const WorkSection = () => {
-    const router = useRouter();
-    
-    const renderWorkPage = () => {
-        switch (router.asPath) {
-            case '/work#project1':
-                return (
-                    <WorkPage 
-                        id="project1"
-                        imageSrc="/Images/mystie-large.png"
-                        markdownSrc="/Markdown/Project1.md"
-                    />
-                );
-            case '/work#project2':
-                return (
-                    <WorkPage 
-                        id="project2"
-                        imageSrc="/Images/mystie-large.png"
-                        markdownSrc="/Markdown/Project2.md"
-                    />
-                );
-            default:
-                return (
-                    <Container centerContent maxWidth='90%' mt='100pt' id='work'>
-                        <MotionLayout>
-                            <Flex flexWrap="wrap" w="100%">
-                                <Box width={{ base: '100%', xl: '50%' }} padding="6">
-                                    <WorkItem
-                                        id="project1"
-                                        title="Project1" 
-                                        imageSrc="/Images/mysite.jpg"
-                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl."
-                                    />
-                                </Box>
-                                <Box width={{ base: '100%', xl: '50%' }} padding="6">
-                                    <WorkItem
-                                        id="project2"
-                                        title="Project2"
-                                        imageSrc="/Images/mysite.jpg"
-                                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl. Donec auctor, nisl eu ultricies ultricies, nunc nisl ultricies nunc, vitae ultricies nisl nisl vitae nisl."
-                                    />
-                                </Box>
-                            </Flex>
-                        </MotionLayout>
-                    </Container>
-                )
-        }
-    }
-
     return (
-        <Layout>
-            {renderWorkPage()}
-        </Layout>
+            <Container centerContent maxWidth='90%' pt='20' mb='20' id='work'>
+            <MotionLayout>
+                <Box w='100%' align='center'>
+                    <Heading size="2xl" align='center' mb='-5'> Works </Heading>
+                    <Box w='90%' align='center' bg={useColorModeValue("#F7F4F2", "#262626")} borderRadius='lg' pt='10' pb='12' mb='14' px='8'> 
+                    <Text fontSize={{base:"sm", sm:'md', md: "lg", lg: "xl"}} align='center'> 
+                        Here are some of my projects. &#x1F60E; <br />
+                        Click on the cards to learn more about them! &#128209; <br />
+                        Also, feel free to contact me if you have any questions&#129300;/ feedbacks &#128172;/ opportunities! &#129309;
+                    </Text></Box>
+                </Box>
+                <Flex flexWrap="wrap" w="100%">
+                    <Box width={{ base: '100%', xl: '50%' }} p='2'>
+                        <WorkItem
+                            name="personal-site"
+                            title="My Portfolio" 
+                            imageSrc="/Images/mysite.jpg"
+                            description="A personal website built with React, Next.js, and Chakra UI. Some cool animations are also added with Framer Motion and Three.js."
+                        />
+                    </Box>
+                    <Box width={{ base: '100%', xl: '50%' }} p='2'>
+                        <WorkItem
+                            name="2dcv-algo-imp"
+                            title="2DCV Algorithms Implementation"
+                            imageSrc="/Images/Lenna.png"
+                            description="Classic 2D Computer Vision algorithms implemented in Python."
+                        />
+                    </Box>
+                </Flex>
+            </MotionLayout>
+        </Container>
     )
 }
 
 
-export default dynamic(() => Promise.resolve(WorkSection), { ssr: false });
+export default WorkSection;

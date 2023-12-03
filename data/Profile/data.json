@@ -1,0 +1,125 @@
+{
+    "experiences":[
+        {
+            "title":"Research Assistant",
+            "shortTitle":"RA",
+            "date":"2021 - 2022",
+            "location":"FGCN Lab, National Taiwan University, Taiwan",
+            "shortLocation":"FGCN Lab, NTU, Taiwan",
+            "description":"Supervisor: Prof. Ai-Chun Pang",
+            "type":"research",
+            "site":"https://www.csie.ntu.edu.tw/~acpang/fgcn/index.html"
+        },
+        {
+            "title":"Research Assistant",
+            "shortTitle":"RA",
+            "date":"2021 - 2022",
+            "location":"CITI, Academia Sinica, Taiwan",
+            "shortLocation":"CITI, Academia Sinica, Taiwan",
+            "description":"Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.",
+            "type":"research",
+            "site":"https://www.citi.sinica.edu.tw/en/"
+        },
+        {
+            "title":"Summer Intern",
+            "shortTitle":"Summer Intern",
+            "date":"2019",
+            "location":"MediaTek, Taiwan",
+            "shortLocation":"MediaTek, Taiwan",
+            "description":"Developed computer vision algorithms.",
+            "type":"work",
+            "site":"https://www.mediatek.tw/"
+        }
+    ],
+    "education":[
+        {
+            "title":"Master of Science in Computer Science",
+            "shortTitle":"M.S. in CS",
+            "date":"2022 - Pres.",
+            "location":"National Taiwan University, Taiwan",
+            "shortLocation":"NTU, Taiwan",
+            "description":"GPA: 4.3/4.3",
+            "type":"education",
+            "site":"https://www.ntu.edu.tw/english/"
+        },
+
+        {
+            "title":"Bachelor of Science in Computer Science",
+            "shortTitle":"B.S. in CS",
+            "date":"2017 - 2022",
+            "location":"National Taiwan University, Taiwan",
+            "shortLocation":"NTU, Taiwan",
+            "description":"GPA: 3.7/4.3",
+            "type":"education",
+            "site":"https://www.ntu.edu.tw/english/"
+        },
+        {
+            "title":"Bachelor of Arts in Economics",
+            "shortTitle":"B.A. in Econ",
+            "date":"2017 - 2022",
+            "location":"National Taiwan University, Taiwan",
+            "shortLocation":"NTU, Taiwan",
+            "description":"Double Major",
+            "type":"education",
+            "site":"https://www.ntu.edu.tw/english/"
+        }
+    ],
+    "publications":[
+        {
+            "title":"KinStyle: A Strong Baseline Photorealistic Kinship Face Synthesis with an Optimized StyleGAN Encoder",
+            "date":"2022",
+            "location":"Asian Conference on Computer Vision 2022",
+            "shortLocation":"ACCV 2022",
+            "description":"Li-Chen Cheng, Shu-Chuan Hsu, Pin-Hua Lee, Hsiu-Chieh Lee, Che-Hsien Lin, Jun-Cheng Chen, Chih-Yu Wang",
+            "type":"publication",
+            "paperlink":"https://openaccess.thecvf.com/content/ACCV2022/html/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.html",
+            "pdf":"https://openaccess.thecvf.com/content/ACCV2022/papers/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.pdf",
+            "poster":"https://drive.google.com/file/d/1cw7E3nYLqJxOUmyBv_LaDtEkLsIYvcch/view?usp=sharing"
+        },
+        {
+            "title":"Kinship Face Synthesis Evaluation Website with Gamified Mechanism",
+            "date":"2022",
+            "location":"IEEE International Conference on Multimedia and Expo Workshops 2022",
+            "description":"Hsiu-Chieh Lee, Che-Hsien Lin, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang",
+            "type":"publication",
+            "paperlink":"https://ieeexplore.ieee.org/abstract/document/9859503",
+            "pdf":"https://ieeexplore.ieee.org/abstract/document/9859503",
+            "site":"https://snac3.citi.sinica.edu.tw/",
+            "video":"https://drive.google.com/file/d/1cdL4O1HUN_i563PSnZbUEcMaS8DfCjuS/view?usp=sharing"
+        },
+        {
+            "title": "StyleDNA: A High-Fidelity Age and Gender Aware Kinship Face Synthesizer",
+            "date": "2021",
+            "location": "IEEE International Conference on Automatic Face and Gesture Recognition 2021",
+            "shortLocation": "IEEE FG 2021",
+            "description": "Che-Hsien Lin, Hung-Chun Chen, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang",
+            "type": "publication",
+            "paperlink": "https://ieeexplore.ieee.org/abstract/document/9666998",
+            "pdf": "https://ieeexplore.ieee.org/abstract/document/9666998",
+            "poster": "https://drive.google.com/file/d/1VrtX79q9P8tt6Yj8sZzO62GSdpGvBHiS/view?usp=sharing",
+            "video": "https://drive.google.com/file/d/10cWD1h0trPcvZ7sQmfYRbzF84NPIVEfy/view?usp=sharing"
+        },
+        {
+            "title": "Fedequal: Defending model poisoning attacks in heterogeneous federated learning",
+            "shortTitle": "Fedequal: Defending model poisoning attacks in heterogeneous federated learning",
+            "date": "2021",
+            "location": "IEEE Global Communications Conference 2021",
+            "shortLocation": "IEEE GLOBECOM 2021",
+            "description": "Ling-Yuan Chen, Te-Chuan Chiu, Ai-Chun Pang, Li-Chen Cheng",
+            "type": "publication",
+            "paperlink": "https://ieeexplore.ieee.org/abstract/document/9685082/",
+            "pdf": "https://ieeexplore.ieee.org/abstract/document/9685082/"
+        },
+        {
+            "title": "Dual-masking framework against two-sided model attacks in federated learning",
+            "shortTitle": "Dual-masking framework against two-sided model attacks in federated learning",
+            "date": "2021",
+            "location": "IEEE Global Communications Conference 2021",
+            "shortLocation": "IEEE GLOBECOM 2021",
+            "description": "Te-Chuan Chiu, Wei-Che Lin, Ai-Chun Pang, Li-Chen Cheng",
+            "type": "publication",
+            "paperlink": "https://ieeexplore.ieee.org/abstract/document/9685701/",
+            "pdf": "https://ieeexplore.ieee.org/abstract/document/9685701/"
+        }
+    ]
+}
