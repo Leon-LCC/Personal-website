@@ -79,7 +79,7 @@ const ProfileItem = ({ title, shortTitle, date, location, shortLocation, descrip
                         mr={{base:0.5 , md:-0.2}}
                     />
                     <Text fontSize={{md: "xl", lg: "2xl"}} letterSpacing={'tighter'} fontWeight={700} display={{base: 'none', md: 'flex'}}>{title}</Text>
-                    <Text fontSize='sm' letterSpacing={'tighter'} fontWeight={600} display={{base: 'flex', md: 'none'}}>{shortTitle}</Text>
+                    <Text fontSize='sm' letterSpacing={'tighter'} fontWeight={600} display={{base: 'flex', md: 'none'}}>{shortTitle}</Text> 
                     <Spacer />
                     <Text fontSize={{base: "sm", md: "md", lg: "lg"}} letterSpacing={'tighter'} fontWeight={700}>{date}</Text>
                 </HStack>
@@ -91,14 +91,14 @@ const ProfileItem = ({ title, shortTitle, date, location, shortLocation, descrip
                     </NextLink>
                 </HStack>
                 <HStack>
-                    <Icon as={useColorModeValue(FaStickyNote, FaRegStickyNote)} width={{base:3, lg: 4}} height={{base:3, lg: 4}} color={'#DBA520'} p={0.5} ml='1' mr='1'/>
+                    <Icon as={useColorModeValue(FaStickyNote, FaRegStickyNote)} width={{base:3, lg: 4}} height={{base:3, lg: 4}} color={'#DBA520'} p={0.5} mx='1'/>
                     <Text fontSize={{ base: "xs", md: "md", lg: "md"}} letterSpacing={'tighter'} fontStyle='italic'>{description}</Text>
                 </HStack>
             </Box>
         )
     } else if (type === 'publication') {
         return (
-            <Box alignItems="center" w='100%' position='relative' px='4' py='3' pb='4' mb='2' borderRadius='lg' boxShadow='md' display={{base: 'none', md: 'grid' }} bg={useColorModeValue("#FFFFFF", "#323232")}>
+            <Box alignItems="center" w='100%' position='relative' px='4' pt='3' pb='4' mb='2' borderRadius='lg' boxShadow='md' display={{base: 'none', md: 'grid' }} bg={useColorModeValue("#FFFFFF", "#323232")}>
                 <NextLink href={paperlink} target="_blank">
                     <Text fontSize={{base: 'sm', md: "lg", lg: "xl"}} letterSpacing={'tighter'}>{title}</Text>
                 </NextLink>            

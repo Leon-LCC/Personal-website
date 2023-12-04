@@ -91,7 +91,7 @@ const WorkPage = ({ frontmatter, markdownBody }) => {
     
     const createPages = () => {
         return (
-            <Tabs variant='soft-rounded' size='md' colorScheme={useColorModeValue("blackAlpha", "whiteAlpha")}>
+            <Tabs variant='soft-rounded' size='md' colorScheme={useColorModeValue("blackAlpha", "whiteAlpha")} onChange={() => {window.scrollTo({top: 600, behavior: 'smooth'});}}>
                 <TabPanels>
                     {splitMarkdown.map((page, index) => (
                         <TabPanel key={index}>

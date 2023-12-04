@@ -85,7 +85,7 @@ const ProfileSection = () => {
     const IconSkill = ({ imgSrc, text }) => {
         return (
             <HStack spacing='0'>
-                <Image src={imgSrc} alt={text} width={30} height={0} priority={true} style={{ height: 'auto' }}/>
+                <Image src={imgSrc} alt={text} width={30} height={0} style={{ height: 'auto' }}/>
                 <Text fontSize={{base: "md", md: "lg"}} ml='2' fontWeight={600}>{text}</Text>
             </HStack>
         )

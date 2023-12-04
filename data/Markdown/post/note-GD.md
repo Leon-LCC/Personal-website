@@ -14,27 +14,27 @@ In this note, I will introduce the mathematical foundations of gradient descent 
 Basically, I will walk you through the relevant definitions, theorems, and proofs step by step. I hope this note can help you (and me) better understand the mathematical foundations of gradient descent algorithms. 
 
 The note is organized as follows:
-- **Preliminaries** (Page 2)
-    - Derectional Derivative
-    - Mean Value Theorem
-    - Taylor's Theorem
-    - Eigenvalues Properties
-    - Vector Norm and Matrix Norm
-    - Loewner Order
-- **Convexity** (Page 3)
-    - Definition
-    - Strong Convexity
-    - Properties
-- **L-smoothness** (Page 3)
-    - Definition
-    - Properties
-- **Gradient Descent Algorithms** (Page 4)
-    - Gradient Descent
-    - Stochastic Gradient Descent
-    - Mini-batch Stochastic Gradient Descent
-    - Stochastic Gradient Descent with Momentum
-        - Polyak's Momentum
-        - Nesterov's Momentum
+- **I. Preliminaries** (Page 2)
+    - 1.1 Directional Derivative
+    - 1.2 Mean Value Theorem
+    - 1.3 Taylor's Theorem
+    - 1.4 Eigenvalues Properties
+    - 1.5 Vector Norm and Matrix Norm
+    - 1.6 Loewner Order
+- **II. Convexity** (Page 3)
+    - 2.1 Definition
+    - 2.2 Strong Convexity
+    - 2.3 Properties
+- **III. L-smoothness** (Page 3)
+    - 3.1 Definition
+    - 3.2 Properties
+- **IV. Algorithms** (Page 4)
+    - 4.1 Gradient Descent
+    - 4.2 Stochastic Gradient Descent
+    - 4.3 Mini-batch Stochastic Gradient Descent
+    - 4.4 Stochastic Gradient Descent with Momentum
+        - 4.4.1 Polyak's Momentum
+        - 4.4.2 Nesterov's Momentum
 
 
 ### Note to Readers
@@ -44,75 +44,79 @@ Hope you aren't scared by the math symbols. :sweat_smile:
 
 
 ---
-## Preliminaries
+# Gradient Descent Algorithms
+## I. Preliminaries
 Here are some basic concepts and theorems that will be used in the following sections. (Most of them are used in proofs.) I only provide the definitions and theorems here. If you want to know more about them, you can check the references at the end of this note.
 
 If you are already familiar with them, or you just assume them to be true (life is too short to prove everything, right?), you can skip this section and go to the next page directly.
 
-### Directional Derivative
+### 1.1 Directional Derivative
 
-### Mean Value Theorem
+### 1.2 Mean Value Theorem
 
-### Taylor's Theorem
+### 1.3 Taylor's Theorem
 
-### Eigenvalues Properties
+### 1.4 Eigenvalues Properties
 
-### Vector Norm and Matrix Norm
+### 1.5 Vector Norm and Matrix Norm
 
-### Loewner Order
+### 1.6 Loewner Order
 
 
 ### References
 
-### Note to Readers
+### :memo: Note to Readers
 Congratulations! You have finished reading the first part. :tada:
 
-If you still want to continue, next page is about function properties, including convexity and L-smoothness. Go! :point_right:
+If you still want to continue, next page is about convexity of functions! :point_right:
 
 
 ---
-## Convexity
+# Gradient Descent Algorithms
+## II. Convexity
 
-### Definition
+### 2.1 Definition
 
-### Strong Convexity
+### 2.2 Strong Convexity
 
-### Properties
+### 2.3 Properties
 
 ### References
 
-### Note to Readers
+### :memo: Note to Readers
 
 
 ---
-## L-smoothness
+# Gradient Descent Algorithms
+## III. L-smoothness
 
-### Definition
+### 3.1 Definition
 
-### Properties
+### 3.2 Properties
 
 ### References
 
-### Note to Readers
+### :memo: Note to Readers
 
 
 ---
-## Gradient Descent Algorithms
+# Gradient Descent Algorithms
+## IV. Algorithms
 
-### Gradient Descent
+### 4.1 Gradient Descent
 
-### Stochastic Gradient Descent
+### 4.2 Stochastic Gradient Descent
 
-### Mini-batch Stochastic Gradient Descent
+### 4.3 Mini-batch Stochastic Gradient Descent
 
-### Stochastic Gradient Descent with Momentum
+### 4.4 Stochastic Gradient Descent with Momentum
 
-#### Polyak's Momentum
+#### 4.4.1 Polyak's Momentum
+
+#### 4.4.2 Nesterov's Momentum
 
 
-#### Nesterov's Momentum
 
 ### References
 
-### Note to Readers
-
+### :memo: Note to Readers
