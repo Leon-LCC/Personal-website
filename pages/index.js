@@ -158,7 +158,7 @@ const HomePage = () => {
     
     return (
         <MotionLayout>
-            <Container centerContent mb='14' mt='16' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}} h='100%' id='home'>
+            <Container centerContent mb='20' mt='16' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}} h='100%' id='home'>
                 <Box id='welcome-avatar' justifyContent={{base: 'center', md: 'right'}} alignItems='center' display='flex' h='50%' w={{base: '100%', md:'50%', lg: '65%'}} zIndex='0'></Box>
                 <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-210pt', sm:'-220pt', lg:'-230pt'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:useColorModeValue("linear(to-t, #FFFFFF, transparent)", "linear(to-t, #262626, transparent)"), md:'none'}}>
                     <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
@@ -196,7 +196,7 @@ const HomePage = () => {
                     </Grid>
                 </Box>
                 <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' pt='32' mt='-45pt' bg={useColorModeValue("#F7F4F2", "#262626")}>
-                    <Box h='10%' w='85%' p='1' mt='-10' mb='14' bg={useColorModeValue("#665143", "#868686")}> </Box>
+                    <Box h='10%' w='85%' p='1' mt='-10' mb='20' bg={useColorModeValue("#665143", "#868686")}> </Box>
                     <Text fontSize={{base: "xl", md:"2xl", lg: "3xl"}} fontWeight='bold' align='center'>Contact Me &#128518;</Text>
                     <Flex flexWrap="wrap" flexDirection='row' gap={{base: '3', sm: '5', lg: '8'}} alignItems='center' justifyContent='center' mx='10' mb='5' p='5' pt='5'borderRadius='lg'>
                         <ContactInfo text='Gmail' herf='mailto:lc.cheng00@gmail.com' imgSrc='/Images/Icons/gmail.png'/>
