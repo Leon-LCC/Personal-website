@@ -5,7 +5,10 @@ import {
     Grid, 
     GridItem, 
     Box, 
+    Flex,
     Button,
+    HStack,
+    VStack,
     useColorModeValue
 } from "@chakra-ui/react"
 
@@ -19,6 +22,7 @@ import { RiQuillPenLine } from "react-icons/ri";
 
 
 import NextLink from 'next/link';
+import Image from 'next/image';
 
 import MotionLayout from "../components/MotionLayout";
 
@@ -122,10 +126,31 @@ const HomePage = () => {
         isInitialized.current = true;
     }, []);
 
+
+    const ContactInfo = ({ imgSrc, text, herf }) => {
+        return (
+            <NextLink href={herf} target="_blank">
+                <HStack spacing='1'>
+                    <Box h={{base: '13pt', md: "16pt", lg: '18pt'}}>
+                        <Image src={imgSrc} alt={text} priority={true} sizes="40vh" style={{width: 'auto', height: '100%'}} width={10} height={10}/>
+                    </Box>
+                    <Text fontSize={{base: "md", md: "xl", lg:"2xl"}} fontWeight={600}>{text}</Text>
+                </HStack>
+            </NextLink>
+        )
+    }
+
+    const copyToClipboard = () => {
+        try {
+            navigator.clipboard.writeText('llleon');
+        } catch (err) {
+            console.log('Failed to copy: ', err);
+        }
+    }
     
     return (
         <MotionLayout>
-            <Container centerContent mb='40' mt='20' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}} h='100%' id='home'>
+            <Container centerContent mb='8' mt='16' py='4' px='0' maxWidth={{base: '90%', lg: '80%'}} h='100%' id='home'>
                 <Box id='welcome-avatar' justifyContent={{base: 'center', md: 'right'}} alignItems='center' display='flex' h='50%' w={{base: '100%', md:'50%', lg: '65%'}} zIndex='0'></Box>
                 <Box justifyContent='center' alignItems='center' display='flex' flexDirection='column' h='50%' w={{base:'100%', md:'60%'}} mt={{base: '-210pt', sm:'-220pt', lg:'-230pt'}} ml={{base: '0', md:'60', lg: '80'}} zIndex='1' bgGradient={{base:useColorModeValue("linear(to-t, #FFFFFF, transparent)", "linear(to-t, #262626, transparent)"), md:'none'}}>
                     <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
@@ -162,7 +187,23 @@ const HomePage = () => {
                         </GridItem>
                     </Grid>
                 </Box>
-                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' p={{base:'20'}} mt='-45pt' mb='6%' bg={useColorModeValue("#F7F4F2", "#262626")}>
+                <Box alignItems='center' display='flex' flexDirection='column' h='100%' w='112%' pt='32' mt='-45pt' bg={useColorModeValue("#F7F4F2", "#262626")}>
+                    <Box h='10%' w='85%' p='1' mt='-10' mb='14' bg={useColorModeValue("#665143", "#868686")}> </Box>
+                    <Text fontSize={{base: "xl", md:"2xl", lg: "3xl"}} fontWeight='bold' align='center'>Contact Me &#128518;</Text>
+                    <Flex flexWrap="wrap" flexDirection='row' gap={{base: '3', sm: '5', lg: '8'}} alignItems='center' justifyContent='center' mx='10' mb='5' p='5' pt='5'borderRadius='lg'>
+                        <ContactInfo text='Gmail' herf='mailto:lc.cheng00@gmail.com' imgSrc='/Images/Icons/gmail.png'/>
+                        <ContactInfo text='Linkedin' herf='https://www.linkedin.com/in/li-chen-cheng/' imgSrc='/Images/Icons/linkedin.png'/>
+                        <ContactInfo text='Github' herf='https://github.com/Leon-LCC' imgSrc={useColorModeValue('/Images/Icons/github.png', '/Images/Icons/github-white.png')}/>
+                        <ContactInfo text='Twitter' herf='https://twitter.com/LeonLCC_' imgSrc='/Images/Icons/twitter.png'/>                        
+                        <Button onClick={() => {copyToClipboard()}} variant='solid3' size='xxs'>
+                            <HStack spacing='1'>
+                                <Box h={{base: '13pt', md: "16pt", lg: '18pt'}}>
+                                    <Image src={'/Images/Icons/discord.png'} alt={'Discord'} priority={true} sizes="40vh" style={{width: 'auto', height: '100%'}} width={10} height={10}/>
+                                </Box>
+                                <Text fontSize={{base: "md", md: "xl", lg:"2xl"}} fontWeight={600}>Discord</Text>
+                            </HStack>
+                        </Button>
+                    </Flex>
                 </Box>
             </Container>
         </MotionLayout>

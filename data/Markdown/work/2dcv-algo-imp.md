@@ -1,5 +1,5 @@
 ---
-title: 2D Computer Vision Algorithms Implementation
+title: 2DCV Algorithms Implementation
 author: Leon Cheng
 date: 2021
 description: Some classic computer vision algorithms implemented in Python.

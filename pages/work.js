@@ -14,10 +14,10 @@ import MotionLayout from "../components/MotionLayout";
 
 const WorkSection = () => {
     return (
-            <Container centerContent maxWidth='90%' pt='20' mb='20' id='work'>
+            <Container centerContent maxWidth={{base: '100%', lg: '90%'}} pt='16' mb='20' id='work'>
             <MotionLayout>
                 <Box w='100%' align='center'>
-                    <Heading size="2xl" align='center' mb='-5'> Works </Heading>
+                    <Heading size="2xl" align='center' mb='-4'> Works </Heading>
                     <Box w='90%' align='center' bg={useColorModeValue("#F7F4F2", "#262626")} borderRadius='lg' pt='10' pb='12' mb='14' px='8'> 
                     <Text fontSize={{base:"sm", sm:'md', md: "lg", lg: "xl"}} align='center'> 
                         Here are some of my projects. &#x1F60E; <br />

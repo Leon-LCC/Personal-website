@@ -5,10 +5,10 @@ date: 2023
 description: My reviews of articles related to collaborative learning and other topics in computer networking.
 image: /Images/article-review.jpg
 github: "https://github.com/Leon-LCC/Article-Reviews"
-tags: ["#English", "#Research", "#Collaborative Learning", "#Computer Networking"]
+tags: ["#Research", "#Collaborative Learning", "#Computer Networking", "#English"]
 ---
 # Article Reviews
-This post contains my reviews of articles related to collaborative learning and other topics (Mostly Computer Networking). This post still needs to be organized. Also, I will keep updating as I read more articles and have time to write reviews.
+This post contains my reviews of articles related to collaborative learning and other topics (Mostly Computer Networking). However, it still needs to be organized. Also, I will keep updating as I read more articles and have time to write reviews.
 
 ## Collaborative Learning
 - PPFL: Privacy-preserving Federated Learning with Trusted Execution Environments

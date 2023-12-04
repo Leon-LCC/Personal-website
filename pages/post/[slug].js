@@ -77,7 +77,7 @@ const PostPage = ({ frontmatter, markdownBody }) => {
 
     const tagsList = () => {
         return (
-            <Flex flexWrap="wrap" alignItems='center' h='100%' gridGap='3' mt='12'>
+            <Flex flexWrap="wrap" alignItems='center' w='100%' gridGap='3' mt='12'>
                 {tags.map((tag) => (
                     <Text key={tag} justifyContent='space-between' fontSize={{ base: "sm", lg: "md"}} color='white' bg='gray.700' px='2' py='1' borderRadius='md'> {tag} </Text>
                 ))}
@@ -111,14 +111,14 @@ const PostPage = ({ frontmatter, markdownBody }) => {
     return (
         <MotionLayout>
             <Box style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
-                <Box pt='100pt' pb='5%' px='10%' w='100%'>
+                <Box pt='20' pb='5%' px={{base: '0%', sm:'4%', md: '10%'}} w='100%'>
                     <NextLink href="/post">
                         <Button variant="solid3" size='lg' fontSize='2xl' color='white'>
                             &#8810; &#xa0; Back
                     </Button>
                     </NextLink>
                 </Box>
-                <VStack px='20%' pt='2%' w='100%' alignItems='right'>
+                <VStack px={{base: '5%', sm:'10%', md: '20%'}} pt='2%' w='100%' alignItems='right'>
                     <Heading as="h1" size="3xl" color='white' mb='2' textShadow={"3px 3px #7E7E7E"}> {title} </Heading>
                     <Text fontSize={{ base: "lg", lg: "xl"}} color='whiteAlpha.700'> {date} </Text>
                     <Text fontSize={{ base: "xl", lg: "2xl"}} color='white' pt='6'> {description} </Text>

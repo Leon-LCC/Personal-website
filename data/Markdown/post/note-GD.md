@@ -4,8 +4,8 @@ author: Leon Cheng
 date: 2023
 description: My learning notes on the mathematical foundations of gradient descent algorithms.
 image: /Images/gd-example.jpg
-download: ""
-tags: []
+download: "/123.pdf"
+tags: ["#Machine Learning", "#Optimization", "#Gradient Descent"]
 ---
 # Gradient Descent Algorithms
 

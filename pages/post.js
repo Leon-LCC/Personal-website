@@ -14,10 +14,10 @@ import MotionLayout from "../components/MotionLayout";
 
 const PostSection = () => {
     return (
-        <Container centerContent maxWidth='90%' pt='20' mb='20' id='post'>
+        <Container centerContent maxWidth={{base: '100%', lg: '90%'}} pt='16' mb='20' id='post'>
             <MotionLayout>
                 <Box w='100%' align='center'>
-                    <Heading size="2xl" align='center' mb='-5'> Posts </Heading>
+                    <Heading size="2xl" align='center' mb='-4'> Posts </Heading>
                     <Box w='90%' align='center' bg={useColorModeValue("#F7F4F2", "#262626")} borderRadius='lg' pt='10' pb='12' mb='14' px='8'> 
                     <Text fontSize={{base:"sm", sm:'md', md: "lg", lg: "xl"}} align='center'> 
                         I write articles about research &#x1F4DA; / learning &#x1F4D6; / programming &#x1F4BB;, and random thoughts &#x1F4AC;. <br />

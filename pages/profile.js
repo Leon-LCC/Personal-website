@@ -93,7 +93,7 @@ const ProfileSection = () => {
 
     return (
         <MotionLayout>
-            <Container centerContent mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '90%', lg: '80%'}}>
+            <Container centerContent mb='10' pt='16' px='0' id='profile'  maxWidth={{base: '90%', lg: '80%'}}>
                 <VStack w='100%' align='center' gap='8' py='10' px={{base: 6, md: 16}} borderRadius='xl' boxShadow='xl' bg={useColorModeValue("#F7F4F2", "#262626")}>
                     <Box display={{ md: 'flex' }} mt={{ base: 0, md: 4 }}>
                         <Box flexShrink={0}>
