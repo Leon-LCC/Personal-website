@@ -110,7 +110,7 @@ const PostPage = ({ frontmatter, markdownBody }) => {
 
     return (
         <MotionLayout>
-            <Box style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '100vh' }}>
+            <Box style={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(${imageSrc})`, backgroundSize: 'cover', backgroundPosition: 'center'}} pb='52'>
                 <Box pt='20' pb='5%' px={{base: '0%', sm:'4%', md: '10%'}} w='100%'>
                     <NextLink href="/post">
                         <Button variant="solid3" size='lg' fontSize='2xl' color='white'>

@@ -73,26 +73,28 @@ const HomePage = () => {
                 const action = mixer.clipAction(gltf.animations[i]);
                 action.enabled = true;
                 action.setEffectiveTimeScale(1);
-                action.setEffectiveWeight(i === 0 ? 1 : 0);
+                action.setEffectiveWeight(i === 1 ? 1 : 0);
                 action.play();
                 allActions.push(action);
             }
-            
+
+            // Click event listener to toggle animation, Randomly fade to animation 0 or 2, Play animation once, Fade to animation 1
             renderer.domElement.addEventListener('click', () => {
                 //Return if the animation is already running
-                if (allActions[1].getEffectiveWeight() > 0) { return; }
-                const nextAnimation = 1;
+                if (allActions[0].getEffectiveWeight() > 0 || allActions[2].getEffectiveWeight() > 0) { return; }
+                const nextAnimation = Math.floor(Math.random() * 2) * 2;
+                console.log(nextAnimation);
                 allActions[nextAnimation].reset();
                 allActions[nextAnimation].enabled = true;
                 allActions[nextAnimation].setEffectiveWeight(1);
                 allActions[nextAnimation].setLoop(THREE.LoopOnce, 1);
                 allActions[nextAnimation].clampWhenFinished = true;
-                allActions[0].crossFadeTo(allActions[nextAnimation], 2);
-                
+                allActions[1].crossFadeTo(allActions[nextAnimation], 2);
+
                 mixer.addEventListener('finished', function onFinished(e) {
-                    allActions[0].enabled = true;
-                    allActions[0].setEffectiveWeight(1);
-                    allActions[0].crossFadeFrom(allActions[nextAnimation], 3);
+                    allActions[1].enabled = true;
+                    allActions[1].setEffectiveWeight(1);
+                    allActions[1].crossFadeFrom(allActions[nextAnimation], 3);
                     mixer.removeEventListener('finished', onFinished);
                 });
             });
