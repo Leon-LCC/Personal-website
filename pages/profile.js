@@ -135,8 +135,8 @@ const ProfileSection = () => {
                         <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
                         <Box h='4'/>
                         <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
-                            I am currently pursuing a graduate degree in the Graduate Institute of Networking and Multimedia at National Taiwan University. 
-                            My research interests lie in the fields of Deep Learning and Computer Vision, with a current focus on the security of AIoT systems such as federated learning and split learning.
+                            I am currently pursuing a master's degree in computer science at National Taiwan University. 
+                            My research interests encompass a broad aspect of machine Learning, computer vsion, and natural language processing, with a current focus on AIoT frameworks such as federated learning and split learning.
                             See my experiences below or check out my projects
                             <NextLink href='/work' passHref><Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify' as="span" color={useColorModeValue("#5D514A", "#C3C3C3")}> here</Text></NextLink>.
                         </Text>

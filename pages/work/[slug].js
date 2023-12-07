@@ -28,6 +28,9 @@ import remarkGemoji from 'remark-gemoji'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import 'katex/dist/katex.min.css';
+import SyntaxHighlighter from 'react-syntax-highlighter'
+import {dark} from 'react-syntax-highlighter/dist/cjs/styles/hljs'
+
 
 import MotionLayout from "../../components/MotionLayout";
 
@@ -54,6 +57,7 @@ const WorkPage = ({ frontmatter, markdownBody }) => {
     const site = frontmatter.site;
     const download = frontmatter.download;
     const tags = frontmatter.tags;
+
 
     const urls = () => {
         return (
@@ -95,8 +99,31 @@ const WorkPage = ({ frontmatter, markdownBody }) => {
                 <TabPanels>
                     {splitMarkdown.map((page, index) => (
                         <TabPanel key={index}>
-                            <Prose>
-                                <ReactMarkdown remarkPlugins={[gfm, remarkMath, remarkGemoji]} rehypePlugins={[rehypeKatex]} children={page} skipHtml/>
+                            <Prose p={{base: 0, lg: 6}}>
+                                <ReactMarkdown 
+                                    remarkPlugins={[gfm, remarkMath, remarkGemoji]}
+                                    rehypePlugins={[rehypeKatex]}  
+                                    components={{
+                                        code({ node, inline, className, children, ...props }) {
+                                        const match = /language-(\w+)/.exec(className || '')
+                                        return !inline && match ? (
+                                            <SyntaxHighlighter
+                                            children={String(children).replace(/\n$/, '')}
+                                            language={match[1]}
+                                            style={dark}
+                                            customStyle={{backgroundColor: useColorModeValue('#2D3748','#1A202C')}}
+                                            {...props}
+                                            />
+                                        ) : (
+                                            <code className={className} {...props}>
+                                            {children}
+                                            </code>
+                                        )
+                                        },
+                                    }}
+                                    children={page}
+                                    skipHtml
+                                />
                             </Prose>
                         </TabPanel>
                     ))}
@@ -128,7 +155,7 @@ const WorkPage = ({ frontmatter, markdownBody }) => {
                     {tagsList()}
                 </VStack>
             </Box>
-            <Container mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '90%', lg: '80%'}}>
+            <Container mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '100%', lg: '90%'}}>
                 <Box  w='100%' mt='-40' py='10' px={{base: 6, md: 16}} borderRadius='xl' boxShadow='xl' bg={useColorModeValue("#F7F4F2", "#262626")}>
                     {createPages()}
                 </Box>
