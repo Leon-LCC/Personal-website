@@ -36,10 +36,34 @@ const WorkSection = () => {
                     </Box>
                     <Box width={{ base: '100%', xl: '50%' }} p='2'>
                         <WorkItem
+                            name="frame-interpolation"
+                            title="Video Frame Interpolation"
+                            imageSrc="/Images/interpolation.jpg"
+                            description="A video frame interpolation project implemented in Python."
+                        />
+                    </Box>
+                    <Box width={{ base: '100%', xl: '50%' }} p='2'>
+                        <WorkItem
+                            name="3dcv-algo-imp"
+                            title="3DCV Algorithms Implementation"
+                            imageSrc="/Images/3dcv.jpg"
+                            description="Some 3D Computer Vision algorithms implemented in Python, such as Stereo Matching and Visual Odometry."
+                        />
+                    </Box>
+                    <Box width={{ base: '100%', xl: '50%' }} p='2'>
+                        <WorkItem
                             name="2dcv-algo-imp"
                             title="2DCV Algorithms Implementation"
                             imageSrc="/Images/Lenna.png"
                             description="Classic 2D Computer Vision algorithms implemented in Python."
+                        />
+                    </Box>
+                    <Box width={{ base: '100%', xl: '50%' }} p='2'>
+                        <WorkItem
+                            name="ninja-game"
+                            title="Ninja Game"
+                            imageSrc="/Images/ninja.jpg"
+                            description="A 2D side-scrolling game built with Java."
                         />
                     </Box>
                 </Flex>
