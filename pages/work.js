@@ -17,13 +17,15 @@ const WorkSection = () => {
             <Container centerContent maxWidth={{base: '100%', lg: '90%'}} pt='16' mb='20' id='work'>
             <MotionLayout>
                 <Box w='100%' align='center'>
-                    <Heading size="2xl" align='center' mb='-4'> Works </Heading>
-                    <Box w='90%' align='center' bg={useColorModeValue("#F7F4F2", "#262626")} borderRadius='lg' pt='10' pb='12' mb='14' px='8'> 
-                    <Text fontSize={{base:"sm", sm:'md', md: "lg", lg: "xl"}} align='center'> 
-                        Here are some of my projects. &#x1F60E; <br />
-                        Click on the cards to learn more about them! &#128209; <br />
-                        Also, feel free to contact me if you have any questions&#129300;/ feedbacks &#128172;/ opportunities! &#129309;
-                    </Text></Box>
+                    <Box align='center' bg={useColorModeValue("#775E4E", "#D9D9D9")} borderRadius='lg' p='4' pb='8' px='6' mb='-6' w='fit-content' position={'relative'} boxShadow='lg'></Box>
+                    <Box w='90%' align='center' bg={useColorModeValue("#F7F4F2", "#262626")} borderRadius='2xl' pt='10' pb='12' mb='14' px='8'> 
+                        <Heading size="2xl" align='center' mb='4'>Work</Heading>
+                        <Text fontSize={{base:"sm", sm:'md', md: "lg", lg: "xl"}} align='center'> 
+                            Here are some of my projects. &#x1F60E; <br />
+                            Click on the cards to learn more about them! &#128209; <br />
+                            Also, feel free to contact me if you have any questions&#129300;/ feedbacks &#128172;/ opportunities! &#129309;
+                        </Text>
+                    </Box>
                 </Box>
                 <Flex flexWrap="wrap" w="100%">
                     <Box width={{ base: '100%', xl: '50%' }} p='2'>
