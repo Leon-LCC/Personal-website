@@ -28,7 +28,6 @@ import profileData from '../data/Profile/data.json';
 
 
 const ProfileSection = () => {
-    console.log(profileData)
     const experiences = () => {
          return profileData.experiences.map((item, index) => (
             <ProfileItem
@@ -106,25 +105,25 @@ const ProfileSection = () => {
                         </Box>
                         <Box mt={{ base: 4, md: 0 }} ml={{ md: 3, xl: 16}}>
                             <Box m='4' p='2' align='center'>
-                                <Heading fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} fontWeight='bold' align='center' pb='1'>Li-Chen Cheng</Heading>
-                                <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center' pl='12pt'> CS graduate student @ NTU</Text>
+                                <Heading fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} fontWeight='bold' align='center' pb='1'>{profileData.personalInfo.name}</Heading>
+                                <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center' pl='12pt'>{profileData.personalInfo.description}</Text>
                             </Box>
                             <HStack spacing={{base:8, xl: 2}} w='100%' justifyContent='center'>
                                 <Box>
                                     <Link href='mailto:lc.cheng00@gmail.com' target="_blank" >
-                                        <Button leftIcon={<MdOutlineEmail />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> lc.cheng00@gmail.com </Button>
+                                        <Button leftIcon={<MdOutlineEmail />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.email} </Button>
                                         <IconButton aria-label="Email" icon={<MdOutlineEmail />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
                                     </Link>
                                 </Box>
                                 <Box>
                                     <Link href='https://github.com/Leon-LCC' target="_blank">
-                                        <Button leftIcon={<IoLogoGithub />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> Leon-LCC </Button>
+                                        <Button leftIcon={<IoLogoGithub />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.github} </Button>
                                         <IconButton aria-label="Github" icon={<IoLogoGithub />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
                                     </Link>
                                 </Box>
                                 <Box>
                                     <Link href='https://www.linkedin.com/in/li-chen-cheng/' target="_blank">
-                                        <Button leftIcon={<IoLogoLinkedin />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> Li-Chen Cheng </Button>
+                                        <Button leftIcon={<IoLogoLinkedin />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.name} </Button>
                                         <IconButton aria-label="Linkedin" icon={<IoLogoLinkedin />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
                                     </Link>
                                 </Box>  
@@ -135,10 +134,7 @@ const ProfileSection = () => {
                         <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
                         <Box h='4'/>
                         <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
-                            I am currently pursuing a Ph.D. degree in computer science at University of California, Irvine. Also, I received my bachelor's and master's degrees in computer science from National Taiwan University.
-                            My research interests encompass a broad aspect of machine Learning and computer vsion, with a current focus on security issues in cyber-physical systems.
-                            See my experiences below or check out my projects
-                            <NextLink href='/work' passHref><Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify' as="span" color={useColorModeValue("#5D514A", "#C3C3C3")}> here</Text></NextLink>.
+                            {profileData.personalInfo.bio}
                         </Text>
                     </Box>
 

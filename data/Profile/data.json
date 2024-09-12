@@ -1,9 +1,17 @@
 {
+    "personalInfo":{
+        "name":"Li-Chen Cheng",
+        "shortname":"Li-Chen (Leon)",
+        "email":"lc.cheng00@gmail.com",
+        "github":"Leon-LCC",
+        "description": "CS Ph.D. student at UCI",
+        "bio": "I am currently pursuing a Ph.D. degree in computer science at University of California, Irvine. Also, I received my bachelor's and master's degrees in computer science from National Taiwan University. My research interests encompass machine learning and computer vision applications, with a current focus on security issues in cyber-physical systems."
+    },
     "experiences":[
         {
             "title":"Research Assistant",
             "shortTitle":"RA",
-            "date":"2021 - 2022",
+            "date":"2021 - 2024",
             "location":"FGCN Lab, National Taiwan University, Taiwan",
             "shortLocation":"FGCN Lab, NTU, Taiwan",
             "description":"Supervisor: Prof. Ai-Chun Pang",
@@ -13,7 +21,7 @@
         {
             "title":"Research Assistant",
             "shortTitle":"RA",
-            "date":"2021 - 2022",
+            "date":"2021 - 2024",
             "location":"CITI, Academia Sinica, Taiwan",
             "shortLocation":"CITI, Academia Sinica, Taiwan",
             "description":"Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.",
@@ -33,7 +41,17 @@
     ],
     "education":[
         {
-            "title":"Master of Science in Computer Science",
+            "title":"Ph.D. in Computer Science",
+            "shortTitle":"Ph.D. in CS",
+            "date":"2024 - Current",
+            "location":"University of California, Irvine, USA",
+            "shortLocation":"UCI, USA",
+            "description":"Advisor: Prof. Alfred Chen",
+            "type":"education",
+            "site":"https://ics.uci.edu/"
+        },
+        {
+            "title":"M.S. in Computer Science",
             "shortTitle":"M.S. in CS",
             "date":"2022 - 2024",
             "location":"National Taiwan University, Taiwan",
@@ -44,7 +62,7 @@
         },
 
         {
-            "title":"Bachelor of Science in Computer Science",
+            "title":"B.S. in Computer Science",
             "shortTitle":"B.S. in CS",
             "date":"2017 - 2022",
             "location":"National Taiwan University, Taiwan",
@@ -54,7 +72,7 @@
             "site":"https://www.ntu.edu.tw/english/"
         },
         {
-            "title":"Bachelor of Arts in Economics",
+            "title":"B.A. in Economics",
             "shortTitle":"B.A. in Econ",
             "date":"2017 - 2022",
             "location":"National Taiwan University, Taiwan",
@@ -120,6 +138,18 @@
             "type": "publication",
             "paperlink": "https://ieeexplore.ieee.org/abstract/document/9685701/",
             "pdf": "https://ieeexplore.ieee.org/abstract/document/9685701/"
+        },
+        {
+            "title": "Ensuring Bidirectional Privacy on Wireless Split Inference Systems",
+            "shortTitle": "Ensuring Bidirectional Privacy on Wireless Split Inference Systems",
+            "date": "2024",
+            "location": "IEEE Wireless Communications",
+            "shortLocation": "IEEE Wireless Communications",
+            "description": "Chia-Che Sa, Li-Chen Cheng, Hsing-Huan Chung, Te-Chuan Chiu, Chih-Yu Wang, Ai-Chun Pang, Shang-Tse Chen",
+            "type": "publication",
+            "paperlink": "https://ieeexplore.ieee.org/abstract/document/10579544",
+            "pdf": "https://ieeexplore.ieee.org/abstract/document/10579544"
+
         }
     ]
 }

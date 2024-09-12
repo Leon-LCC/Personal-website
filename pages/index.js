@@ -30,6 +30,8 @@ import Image from 'next/image';
 import MotionLayout from "../components/MotionLayout";
 import { useState } from 'react';
 
+import profileData from '../data/Profile/data.json';
+
 
 const HomePage = () => {
     const isInitialized = useRef(false);
@@ -166,9 +168,9 @@ const HomePage = () => {
                     <Box display={{base: 'block', md: 'none'}} h='10%' w='100%' p='1'> </Box>
                     <Text fontSize={{ md: "lg", lg: "xl"}}  display={{base: 'none', md: 'block'}} align='center'>Hey there!</Text>
                     <NextLink href='https://drive.google.com/uc?id=1jm8_Q5teuUOlfwiCw5ey_1cYacnW-2s4&export=download' target="_blank">
-                        <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow={useColorModeValue("3px 3px #EFEBE7", "3px 3px #7E7E7E")}>I'm Leon Cheng</Heading>
+                        <Heading fontSize={{base: "4xl", sm: "5xl", lg: "6xl"}} fontWeight='bold' align='center' textShadow={useColorModeValue("3px 3px #EFEBE7", "3px 3px #7E7E7E")}>I'm {profileData.personalInfo.shortname}</Heading>
                     </NextLink>                    
-                    <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> Student @ NTU GINM | CSIE </Text>
+                    <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center'> {profileData.personalInfo.description}</Text>
                     
                     <Grid templateRows='repeat(2, 1fr)' templateColumns='repeat(3, 1fr)' gap={4} w='100%' mt='4' p='3' mb='-2'>
                         <GridItem rowSpan={1} colSpan={3} justifyContent='Center' alignItems='Center' display='flex'>

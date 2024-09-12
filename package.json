@@ -4,7 +4,7 @@
   "description": "This is my first time using React to build a website, so there's still much room for improvement.\r Yet, I hope you like my design.",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev -p 3000 -H 192.168.1.104",
+    "dev": "next dev -p 3000 -H localhost",
     "build": "next build",
     "prettier": "prettier -write .",
     "lint": "next lint"
