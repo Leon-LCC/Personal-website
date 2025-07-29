@@ -1,11 +1,11 @@
 {
     "personalInfo":{
         "name":"Li-Chen Cheng",
-        "shortname":"Li-Chen (Leon)",
+        "shortname":"LICHEN",
         "email":"lc.cheng00@gmail.com",
         "github":"Leon-LCC",
         "description": "CS Ph.D. student at UCI",
-        "bio": "I am currently pursuing a Ph.D. degree in computer science at University of California, Irvine. Also, I received my bachelor's and master's degrees in computer science from National Taiwan University. My research interests encompass machine learning and computer vision applications, with a current focus on security issues in cyber-physical systems."
+        "bio": "I am currently pursuing a Ph.D. degree in computer science at University of California, Irvine. I received my bachelor's and master's degrees in computer science from National Taiwan University. My research interests includes machine learning applications, with a current focus on security issues in cyber-physical systems."
     },
     "experiences":[
         {
@@ -14,7 +14,7 @@
             "date":"2021 - 2024",
             "location":"FGCN Lab, National Taiwan University, Taiwan",
             "shortLocation":"FGCN Lab, NTU, Taiwan",
-            "description":"Supervisor: Prof. Ai-Chun Pang",
+            "description":"Advisor: Prof. Ai-Chun Pang",
             "type":"research",
             "site":"https://www.csie.ntu.edu.tw/~acpang/fgcn/index.html"
         },
@@ -24,7 +24,7 @@
             "date":"2021 - 2024",
             "location":"CITI, Academia Sinica, Taiwan",
             "shortLocation":"CITI, Academia Sinica, Taiwan",
-            "description":"Supervisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.",
+            "description":"Advisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.",
             "type":"research",
             "site":"https://www.citi.sinica.edu.tw/en/"
         },
@@ -46,7 +46,7 @@
             "date":"2024 - Current",
             "location":"University of California, Irvine, USA",
             "shortLocation":"UCI, USA",
-            "description":"Advisor: Prof. Alfred Chen",
+            "description": "GPA: 4.0/4.0 (Ongoing)",
             "type":"education",
             "site":"https://ics.uci.edu/"
         },
@@ -102,7 +102,6 @@
             "type":"publication",
             "paperlink":"https://ieeexplore.ieee.org/abstract/document/9859503",
             "pdf":"https://ieeexplore.ieee.org/abstract/document/9859503",
-            "site":"https://snac3.citi.sinica.edu.tw/",
             "video":"https://drive.google.com/file/d/1cdL4O1HUN_i563PSnZbUEcMaS8DfCjuS/view?usp=sharing"
         },
         {

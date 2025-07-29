@@ -19,7 +19,6 @@ import {SiGooglescholar, SiIeee} from 'react-icons/si';
 import { MdOutlineEmail } from 'react-icons/md';
 
 import Image from "next/image";
-import NextLink from 'next/link';
 
 import ProfileItem from "../components/ProfileItem";
 import MotionLayout from "../components/MotionLayout";
@@ -84,98 +83,96 @@ const ProfileSection = () => {
     const IconSkill = ({ imgSrc, text }) => {
         return (
             <HStack spacing='0'>
-                <Image src={imgSrc} alt={text} width={30} height={0} style={{ height: 'auto' }}/>
-                <Text fontSize={{base: "md", md: "lg"}} ml='2' fontWeight={600}>{text}</Text>
+                <Image src={imgSrc} alt={text} width={18} height={0} style={{ height: 'auto' }}/>
+                <Text fontSize={{base: "sm", md: "md"}} ml='1' fontWeight={400} letterSpacing={'tighter'}>{text}</Text>
             </HStack>
         )
     }
 
     return (
         <MotionLayout>
-            <Container centerContent mb='10' pt='16' px='0' id='profile'  maxWidth={{base: '90%', lg: '80%'}}>
-                <VStack w='100%' align='center' gap='8' py='10' px={{base: 6, md: 16}} borderRadius='xl' boxShadow='xl' bg={useColorModeValue("#F7F4F2", "#262626")}>
+            <Container centerContent mb='0' pt='28' px='0' id='profile'  maxWidth='100%'>
+                <VStack w='100%' align='center' gap='8' py='10' px={{base: 6, md: 20}} bg={useColorModeValue("#ffffffff", "#0f0f0fff")}>
                     <Box display={{ md: 'flex' }} mt={{ base: 0, md: 4 }}>
                         <Box flexShrink={0}>
-                            <Center display={{ base: 'none', lg: 'flex' }} overflow='hidden' borderRadius="full" borderWidth={4} borderStyle="solid" borderColor={useColorModeValue("#685950", "whiteAlpha.700")}> 
-                                <Image src="/Images/ID.jpg" alt=" Profile Photo" width={200} height={200}/>
+                            <Center display={{ base: 'none', lg: 'flex' }} overflow='hidden' borderRadius="40% 25% 25% 25%" borderWidth={2} borderStyle="solid">
+                                <Image src="/Images/ID.jpg" alt=" Profile Photo" width={210} height={210}/>
                             </Center>
-                            <Center display={{ base: 'flex', lg: 'none' }} mx={{base:16, md: 0 }} overflow='hidden' borderRadius="full" borderColor={useColorModeValue("#685950", "whiteAlpha.700")} borderWidth={4} borderStyle="solid">
-                                <Image src="/Images/ID.jpg" alt=" Profile Photo" width={170} height={170} />
+                            <Center display={{ base: 'flex', lg: 'none' }} mx={{base:16, md: 0 }} overflow='hidden' borderRadius="40% 25% 25% 25%" borderWidth={2} borderStyle="solid">
+                                <Image src="/Images/ID.jpg" alt=" Profile Photo" width={190} height={190} />
                             </Center>
                         </Box>
-                        <Box mt={{ base: 4, md: 0 }} ml={{ md: 3, xl: 16}}>
-                            <Box m='4' p='2' align='center'>
+                        <Box mt={{ base: 4, md: 3 }} ml={{ md: 12, xl: 24}}>
+                            <Box mx='6' p='2' align='center'>
                                 <Heading fontSize={{base: "3xl", md: "4xl", lg: "5xl"}} fontWeight='bold' align='center' pb='1'>{profileData.personalInfo.name}</Heading>
-                                <Text fontSize={{ md: "xl", lg: "2xl"}}  align='center' pl='12pt'>{profileData.personalInfo.description}</Text>
                             </Box>
-                            <HStack spacing={{base:8, xl: 2}} w='100%' justifyContent='center'>
-                                <Box>
-                                    <Link href='mailto:lc.cheng00@gmail.com' target="_blank" >
-                                        <Button leftIcon={<MdOutlineEmail />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.email} </Button>
-                                        <IconButton aria-label="Email" icon={<MdOutlineEmail />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
+                            <VStack spacing={4} align='center' mt='5'>
+                                <HStack spacing={{base:8, xl: 2}} w='100%' justifyContent='center'>
+                                    <Box>
+                                        <Link href='mailto:lc.cheng00@gmail.com' target="_blank" >
+                                            <Button leftIcon={<MdOutlineEmail />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.email} </Button>
+                                            <IconButton aria-label="Email" icon={<MdOutlineEmail />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
+                                        </Link>
+                                    </Box>
+                                    <Box>
+                                        <Link href='https://github.com/Leon-LCC' target="_blank">
+                                            <Button leftIcon={<IoLogoGithub />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.github} </Button>
+                                            <IconButton aria-label="Github" icon={<IoLogoGithub />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
+                                        </Link>
+                                    </Box>
+                                    <Box>
+                                        <Link href='https://www.linkedin.com/in/li-chen-cheng/' target="_blank">
+                                            <Button leftIcon={<IoLogoLinkedin />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.name} </Button>
+                                            <IconButton aria-label="Linkedin" icon={<IoLogoLinkedin />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
+                                        </Link>
+                                    </Box>
+                                </HStack>
+                                <HStack spacing={{base: 0, md: 2}} mt='2'>
+                                    <Link href='https://scholar.google.com.tw/citations?hl=zh-TW&user=7974KNgAAAAJ' target="_blank" style={{ textDecoration: 'none' }}>
+                                        <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}}>
+                                            <Icon as={SiGooglescholar} mr='1'/>
+                                            <Text display="flex">Google Scholar </Text>
+                                        </Button>
                                     </Link>
-                                </Box>
-                                <Box>
-                                    <Link href='https://github.com/Leon-LCC' target="_blank">
-                                        <Button leftIcon={<IoLogoGithub />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.github} </Button>
-                                        <IconButton aria-label="Github" icon={<IoLogoGithub />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
+
+                                    <Link href='https://ieeexplore.ieee.org/author/37089280660' target="_blank" style={{ textDecoration: 'none' }}>
+                                        <Button variant='solid2' size='xs' fontSize="md">
+                                            <Icon as={SiIeee} boxSize={14} mr='1'/>
+                                            Xplore
+                                        </Button>
                                     </Link>
-                                </Box>
-                                <Box>
-                                    <Link href='https://www.linkedin.com/in/li-chen-cheng/' target="_blank">
-                                        <Button leftIcon={<IoLogoLinkedin />} w='100%' display={{ base: 'none', xl: 'flex' }} variant='solid' size='sm' fontSize='lg'> {profileData.personalInfo.name} </Button>
-                                        <IconButton aria-label="Linkedin" icon={<IoLogoLinkedin />} w='100%' display={{ base: 'flex', xl: 'none' }} fontSize='4xl' size='xs' colorScheme='whiteAlpha'/>
-                                    </Link>
-                                </Box>  
-                            </HStack>
+                                </HStack>
+                            </VStack>
                         </Box>
                     </Box>
-                    <Box w='100%' px={{base: 2, sm: 8}} py='4'>
-                        <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left'>About Me</Heading>
+                    <Box w='100%' px={{base: 2, sm: 8}} py='5' pt='16'>
+                        <Heading variant='section' fontSize={{base: "xl", lg: "2xl"}} textAlign='left'>About Me</Heading>
                         <Box h='4'/>
-                        <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify'>
+                        <Text fontSize={{base: "sm", md: "md", lg: "lg"}} textAlign='justify'  borderTopWidth="2px" pt='4' borderRadius='md'>
                             {profileData.personalInfo.bio}
                         </Text>
                     </Box>
 
-                    <Box w='100%' px={{base: 2, sm: 8}} py='4'>
-                        <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left' mb='4'>Experience</Heading>
+                    <Box w='100%' px={{base: 2, sm: 8}} py='5'>
+                        <Heading variant='section' fontSize={{base: "xl", lg: "2xl"}} textAlign='left' mb='6'>Experience</Heading>
                         {experiences()}
                     </Box>
 
-                    <Box w='100%' px={{base: 2, sm: 8}} py='4'>
-                        <Heading variant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left' mb='4'>Education</Heading>
+                    <Box w='100%' px={{base: 2, sm: 8}} py='5'>
+                        <Heading variant='section' fontSize={{base: "xl", lg: "2xl"}} textAlign='left' mb='6'>Education</Heading>
                         {education()}
                     </Box>
 
-                    <Box w='100%' px={{base: 2, sm: 8}} py='4'>
-                        <Heading veriant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left' mb='4'>Publication</Heading>
-                        <HStack spacing={{base: 0, md: 2}} mb='4'>
-                            <Text fontSize={{md: "lg", lg: "xl"}} display={{ base: 'none', md: 'flex' }} textAlign='justify'> View on </Text>
-                            <Link href='https://scholar.google.com.tw/citations?hl=zh-TW&user=7974KNgAAAAJ' target="_blank" style={{ textDecoration: 'none' }}>
-                                <Button variant='solid2' size='xs' fontSize={{base: "md", md: "lg"}}>
-                                    <Icon as={SiGooglescholar} mr='1'/>
-                                    <Text display="flex">Google Scholar </Text>
-                                </Button>
-                            </Link>
-                            <Text fontSize={{base: "md", md: "lg", lg: "xl"}} textAlign='justify' display={{ base: 'none', md: 'flex' }}> or </Text>
-                            <Box h='4' w='6' display={{ base: 'flex', md: 'none' }}/>
-                            <Link href='https://ieeexplore.ieee.org/author/37089280660' target="_blank" style={{ textDecoration: 'none' }}>
-                                <Button variant='solid2' size='xs' fontSize="md" display={{ base: 'none', sm: 'flex' }}>
-                                    <Icon as={SiIeee} boxSize={14} mr='1'/>
-                                    Xplore
-                                </Button>
-                                <IconButton aria-label="IEEE" icon={<Icon as={SiIeee}/>} variant='solid3' size='xs' fontSize='5xl' display={{ base: 'flex', sm: 'none' }}/>
-                            </Link>
-                        </HStack>
+                    <Box w='100%' px={{base: 2, sm: 8}} py='5' display={{base: 'none', md: 'block'}}>
+                        <Heading variant='section' fontSize={{base: "xl", lg: "2xl"}} textAlign='left' mb='6'>Publication</Heading>
                         {publications()}
                     </Box>
 
-                    <Box w='100%' px={{base: 2, sm: 8}} py='4'>
-                        <Heading veriant='section' fontSize={{base: "xl", lg: "3xl"}} textAlign='left' mb='4'>Skills</Heading>
+                    <Box w='100%' px={{base: 2, sm: 8}} py='5'>
+                        <Heading variant='section' fontSize={{base: "xl", lg: "2xl"}} textAlign='left' mb='6'>Skills</Heading>
                         <VStack>
-                            <Box alignItems="left" w='100%' px='4' py='3' pb='6' mb='2' borderRadius='lg' boxShadow='md' bg={useColorModeValue("#FFFFFF", "#323232")}>
-                                <Text fontSize={{base: "lg", lg: "2xl"}} letterSpacing={'tighter'} fontWeight={700} mb='4'>Programming Languages</Text>
+                            <Box alignItems="left" w='100%' px='0' py='4' pb='6' mb='4' borderRadius='lg' bg={useColorModeValue("#FFFFFF", "#0f0f0fff")}  borderTopWidth="2px">
+                                <Text fontSize={{base: "md", lg: "lg"}} letterSpacing={'tighter'} fontWeight={400} mb='4'>Programming Languages</Text>
                                 <Flex flexWrap="wrap" h='100%' gridGap='6'>
                                     <IconSkill imgSrc='/Images/Icons/python.png' text='Python'/>
                                     <IconSkill imgSrc='/Images/Icons/c.png' text='C++'/>
@@ -186,8 +183,8 @@ const ProfileSection = () => {
                                     <IconSkill imgSrc='/Images/Icons/r.png' text='R'/>
                                 </Flex>
                             </Box>
-                            <Box alignItems="left" w='100%' px='4' py='3' pb='6' mb='2' borderRadius='lg' boxShadow='md' bg={useColorModeValue("#FFFFFF", "#323232")}>
-                                <Text fontSize={{base: "lg", lg: "2xl"}} letterSpacing={'tighter'} fontWeight={700} mb='4'>Tools</Text>
+                            <Box alignItems="left" w='100%' px='0' py='4' pb='6' mb='4' borderRadius='lg' bg={useColorModeValue("#FFFFFF", "#0f0f0fff")}  borderTopWidth="2px">
+                                <Text fontSize={{base: "md", lg: "lg"}} letterSpacing={'tighter'} fontWeight={400} mb='4'>Tools</Text>
                                 <Flex flexWrap="wrap" h='100%' gridGap='6'>
                                     <IconSkill imgSrc='/Images/Icons/pytorch.png' text='Pytorch'/>
                                     <IconSkill imgSrc='/Images/Icons/tensorflow.png' text='Tensorflow'/>
@@ -198,8 +195,8 @@ const ProfileSection = () => {
                                     <IconSkill imgSrc='/Images/Icons/open3d.png' text='Open3D'/>
                                 </Flex>
                             </Box>
-                            <Box alignItems="left" w='100%' px='4' py='3' pb='6' mb='2' borderRadius='lg' boxShadow='md' bg={useColorModeValue("#FFFFFF", "#323232")}>
-                                <Text fontSize={{base: "lg", lg: "2xl"}} letterSpacing={'tighter'} fontWeight={700} mb='4'>Web Dev</Text>
+                            <Box alignItems="left" w='100%' px='0' py='4' pb='6' mb='4' borderRadius='lg' bg={useColorModeValue("#FFFFFF", "#0f0f0fff")}  borderTopWidth="2px">
+                                <Text fontSize={{base: "md", lg: "lg"}} letterSpacing={'tighter'} fontWeight={400} mb='4'>Web Dev</Text>
                                 <Flex flexWrap="wrap" h='100%' gridGap='6'>
                                     <IconSkill imgSrc='/Images/Icons/react.png' text='React'/>
                                     <IconSkill imgSrc='/Images/Icons/nextjs.png' text='Next.js'/>
@@ -208,8 +205,8 @@ const ProfileSection = () => {
                                 </Flex>
                             </Box>
 
-                            <Box alignItems="left" w='100%' px='4' py='3' pb='6' mb='2' borderRadius='lg' boxShadow='md' bg={useColorModeValue("#FFFFFF", "#323232")}>
-                                <Text fontSize={{base: "lg", lg: "2xl"}} letterSpacing={'tighter'} fontWeight={700} mb='4'>Others</Text>
+                            <Box alignItems="left" w='100%' px='0' py='4' pb='6' mb='4' borderRadius='lg' bg={useColorModeValue("#FFFFFF", "#0f0f0fff")}  borderTopWidth="2px">
+                                <Text fontSize={{base: "md", lg: "lg"}} letterSpacing={'tighter'} fontWeight={400} mb='4'>Others</Text>
                                 <Flex flexWrap="wrap" h='100%' gridGap='6'>
                                     <IconSkill imgSrc='/Images/Icons/blender.png' text='Blender'/>
                                     <IconSkill imgSrc='/Images/Icons/ai.png' text='Illustrator'/>

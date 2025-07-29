@@ -144,15 +144,15 @@ const PostPage = ({ frontmatter, markdownBody }) => {
                     </NextLink>
                 </Box>
                 <VStack px={{base: '5%', sm:'10%', md: '20%'}} py='3%' w='100%' alignItems='right'>
-                    <Heading as="h1" size="3xl" color='white' mb='2' textShadow={"3px 3px #7E7E7E"}> {title} </Heading>
+                    <Heading as="h1" size="3xl" color='white' mb='2'> {title} </Heading>
                     <Text fontSize={{ base: "lg", lg: "xl"}} color='whiteAlpha.700'> {date} </Text>
-                    <Text fontSize={{ base: "xl", lg: "2xl"}} color='white' pt='6'> {description} </Text>
+                    <Text fontSize={{ base: "lg", lg: "xl"}} color='white' pt='6' opacity={0.9}> {description} </Text>
                     {urls()}
                     {tagsList()}
                 </VStack>
             </Box>
-            <Container mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '100%', lg: '90%'}}>
-                <Box  w='100%' mt='-40' py='10' px={{base: 6, md: 16}} borderRadius='xl' boxShadow='xl' bg={useColorModeValue("#F7F4F2", "#262626")}>
+            <Container mb='10' pt='20' px='0' id='profile'  maxWidth={{base: '100%', lg: '100%'}}>
+                <Box  w='100%' mt='-40' py='10' px={{base: 6, md: 16}} bg={useColorModeValue("#ffffffff", "#0f0f0fff")}>
                     {createPages()}
                 </Box>
             </Container>
