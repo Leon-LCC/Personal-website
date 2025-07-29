@@ -1,10 +1,10 @@
 ---
-title: 
+title:
 author: Leon Cheng
-date: 
-description: 
+date:
+description:
 image: /Images/interpolation.jpg
-github: 
-site: 
+github:
+site:
 tags: []
 ---

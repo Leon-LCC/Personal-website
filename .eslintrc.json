@@ -1,13 +1,8 @@
-
 {
-    "extends": [
-      "next",
-      "prettier",
-      "prettier/react"
-    ],
+    "extends": ["next", "prettier", "prettier/react"],
     "plugins": ["prettier"],
     "rules": {
-      "prettier/prettier": "error",
-      "default-param-last": "error"
+        "prettier/prettier": "error",
+        "default-param-last": "error"
     }
-  }
+}

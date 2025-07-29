@@ -1,108 +1,108 @@
 {
-    "personalInfo":{
-        "name":"Li-Chen Cheng",
-        "shortname":"LICHEN",
-        "email":"lc.cheng00@gmail.com",
-        "github":"Leon-LCC",
+    "personalInfo": {
+        "name": "Li-Chen Cheng",
+        "shortname": "LICHEN",
+        "email": "lc.cheng00@gmail.com",
+        "github": "Leon-LCC",
         "description": "CS Ph.D. student at UCI",
         "bio": "I am currently pursuing a Ph.D. degree in computer science at University of California, Irvine. I received my bachelor's and master's degrees in computer science from National Taiwan University. My research interests includes machine learning applications, with a current focus on security issues in cyber-physical systems."
     },
-    "experiences":[
+    "experiences": [
         {
-            "title":"Research Assistant",
-            "shortTitle":"RA",
-            "date":"2021 - 2024",
-            "location":"FGCN Lab, National Taiwan University, Taiwan",
-            "shortLocation":"FGCN Lab, NTU, Taiwan",
-            "description":"Advisor: Prof. Ai-Chun Pang",
-            "type":"research",
-            "site":"https://www.csie.ntu.edu.tw/~acpang/fgcn/index.html"
+            "title": "Research Assistant",
+            "shortTitle": "RA",
+            "date": "2021 - 2024",
+            "location": "FGCN Lab, National Taiwan University, Taiwan",
+            "shortLocation": "FGCN Lab, NTU, Taiwan",
+            "description": "Advisor: Prof. Ai-Chun Pang",
+            "type": "research",
+            "site": "https://www.csie.ntu.edu.tw/~acpang/fgcn/index.html"
         },
         {
-            "title":"Research Assistant",
-            "shortTitle":"RA",
-            "date":"2021 - 2024",
-            "location":"CITI, Academia Sinica, Taiwan",
-            "shortLocation":"CITI, Academia Sinica, Taiwan",
-            "description":"Advisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.",
-            "type":"research",
-            "site":"https://www.citi.sinica.edu.tw/en/"
+            "title": "Research Assistant",
+            "shortTitle": "RA",
+            "date": "2021 - 2024",
+            "location": "CITI, Academia Sinica, Taiwan",
+            "shortLocation": "CITI, Academia Sinica, Taiwan",
+            "description": "Advisor: Prof. Jun-Cheng Chen and Prof. Chih-Yu Wang.",
+            "type": "research",
+            "site": "https://www.citi.sinica.edu.tw/en/"
         },
         {
-            "title":"Summer Intern",
-            "shortTitle":"Summer Intern",
-            "date":"2019",
-            "location":"MediaTek, Taiwan",
-            "shortLocation":"MediaTek, Taiwan",
-            "description":"Developed computer vision algorithms.",
-            "type":"work",
-            "site":"https://www.mediatek.tw/"
+            "title": "Summer Intern",
+            "shortTitle": "Summer Intern",
+            "date": "2019",
+            "location": "MediaTek, Taiwan",
+            "shortLocation": "MediaTek, Taiwan",
+            "description": "Developed computer vision algorithms.",
+            "type": "work",
+            "site": "https://www.mediatek.tw/"
         }
     ],
-    "education":[
+    "education": [
         {
-            "title":"Ph.D. in Computer Science",
-            "shortTitle":"Ph.D. in CS",
-            "date":"2024 - Current",
-            "location":"University of California, Irvine, USA",
-            "shortLocation":"UCI, USA",
+            "title": "Ph.D. in Computer Science",
+            "shortTitle": "Ph.D. in CS",
+            "date": "2024 - Current",
+            "location": "University of California, Irvine, USA",
+            "shortLocation": "UCI, USA",
             "description": "GPA: 4.0/4.0 (Ongoing)",
-            "type":"education",
-            "site":"https://ics.uci.edu/"
+            "type": "education",
+            "site": "https://ics.uci.edu/"
         },
         {
-            "title":"M.S. in Computer Science",
-            "shortTitle":"M.S. in CS",
-            "date":"2022 - 2024",
-            "location":"National Taiwan University, Taiwan",
-            "shortLocation":"NTU, Taiwan",
-            "description":"GPA: 4.3/4.3",
-            "type":"education",
-            "site":"https://www.ntu.edu.tw/english/"
+            "title": "M.S. in Computer Science",
+            "shortTitle": "M.S. in CS",
+            "date": "2022 - 2024",
+            "location": "National Taiwan University, Taiwan",
+            "shortLocation": "NTU, Taiwan",
+            "description": "GPA: 4.3/4.3",
+            "type": "education",
+            "site": "https://www.ntu.edu.tw/english/"
         },
 
         {
-            "title":"B.S. in Computer Science",
-            "shortTitle":"B.S. in CS",
-            "date":"2017 - 2022",
-            "location":"National Taiwan University, Taiwan",
-            "shortLocation":"NTU, Taiwan",
-            "description":"GPA: 3.7/4.3, Last 60 GPA: 4.15/4.3",
-            "type":"education",
-            "site":"https://www.ntu.edu.tw/english/"
+            "title": "B.S. in Computer Science",
+            "shortTitle": "B.S. in CS",
+            "date": "2017 - 2022",
+            "location": "National Taiwan University, Taiwan",
+            "shortLocation": "NTU, Taiwan",
+            "description": "GPA: 3.7/4.3, Last 60 GPA: 4.15/4.3",
+            "type": "education",
+            "site": "https://www.ntu.edu.tw/english/"
         },
         {
-            "title":"B.A. in Economics",
-            "shortTitle":"B.A. in Econ",
-            "date":"2017 - 2022",
-            "location":"National Taiwan University, Taiwan",
-            "shortLocation":"NTU, Taiwan",
-            "description":"Double Major",
-            "type":"education",
-            "site":"https://www.ntu.edu.tw/english/"
+            "title": "B.A. in Economics",
+            "shortTitle": "B.A. in Econ",
+            "date": "2017 - 2022",
+            "location": "National Taiwan University, Taiwan",
+            "shortLocation": "NTU, Taiwan",
+            "description": "Double Major",
+            "type": "education",
+            "site": "https://www.ntu.edu.tw/english/"
         }
     ],
-    "publications":[
+    "publications": [
         {
-            "title":"KinStyle: A Strong Baseline Photorealistic Kinship Face Synthesis with an Optimized StyleGAN Encoder",
-            "date":"2022",
-            "location":"Asian Conference on Computer Vision 2022",
-            "shortLocation":"ACCV 2022",
-            "description":"Li-Chen Cheng, Shu-Chuan Hsu, Pin-Hua Lee, Hsiu-Chieh Lee, Che-Hsien Lin, Jun-Cheng Chen, Chih-Yu Wang",
-            "type":"publication",
-            "paperlink":"https://openaccess.thecvf.com/content/ACCV2022/html/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.html",
-            "pdf":"https://openaccess.thecvf.com/content/ACCV2022/papers/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.pdf",
-            "poster":"https://drive.google.com/file/d/1cw7E3nYLqJxOUmyBv_LaDtEkLsIYvcch/view?usp=sharing"
+            "title": "KinStyle: A Strong Baseline Photorealistic Kinship Face Synthesis with an Optimized StyleGAN Encoder",
+            "date": "2022",
+            "location": "Asian Conference on Computer Vision 2022",
+            "shortLocation": "ACCV 2022",
+            "description": "Li-Chen Cheng, Shu-Chuan Hsu, Pin-Hua Lee, Hsiu-Chieh Lee, Che-Hsien Lin, Jun-Cheng Chen, Chih-Yu Wang",
+            "type": "publication",
+            "paperlink": "https://openaccess.thecvf.com/content/ACCV2022/html/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.html",
+            "pdf": "https://openaccess.thecvf.com/content/ACCV2022/papers/Cheng_KinStyle_A_Strong_Baseline_Photorealistic_Kinship_Face_Synthesis_with_An_ACCV_2022_paper.pdf",
+            "poster": "https://drive.google.com/file/d/1cw7E3nYLqJxOUmyBv_LaDtEkLsIYvcch/view?usp=sharing"
         },
         {
-            "title":"Kinship Face Synthesis Evaluation Website with Gamified Mechanism",
-            "date":"2022",
-            "location":"IEEE International Conference on Multimedia and Expo Workshops 2022",
-            "description":"Hsiu-Chieh Lee, Che-Hsien Lin, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang",
-            "type":"publication",
-            "paperlink":"https://ieeexplore.ieee.org/abstract/document/9859503",
-            "pdf":"https://ieeexplore.ieee.org/abstract/document/9859503",
-            "video":"https://drive.google.com/file/d/1cdL4O1HUN_i563PSnZbUEcMaS8DfCjuS/view?usp=sharing"
+            "title": "Kinship Face Synthesis Evaluation Website with Gamified Mechanism",
+            "date": "2022",
+            "location": "IEEE International Conference on Multimedia and Expo Workshops 2022",
+            "description": "Hsiu-Chieh Lee, Che-Hsien Lin, Li-Chen Cheng, Shu-Chuan Hsu, Jun-Cheng Chen, Chih-Yu Wang",
+            "type": "publication",
+            "paperlink": "https://ieeexplore.ieee.org/abstract/document/9859503",
+            "pdf": "https://ieeexplore.ieee.org/abstract/document/9859503",
+            "video": "https://drive.google.com/file/d/1cdL4O1HUN_i563PSnZbUEcMaS8DfCjuS/view?usp=sharing"
         },
         {
             "title": "StyleDNA: A High-Fidelity Age and Gender Aware Kinship Face Synthesizer",
@@ -148,7 +148,6 @@
             "type": "publication",
             "paperlink": "https://ieeexplore.ieee.org/abstract/document/10579544",
             "pdf": "https://ieeexplore.ieee.org/abstract/document/10579544"
-
         }
     ]
 }

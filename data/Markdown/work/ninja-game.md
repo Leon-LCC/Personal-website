@@ -1,9 +1,9 @@
 ---
-title: 
+title:
 author: Leon Cheng
-date: 
-description: 
-image: 
-github: 
+date:
+description:
+image:
+github:
 tags: []
 ---
