@@ -3,7 +3,7 @@ title: 2DCV Algorithms Implementation
 author: Leon Cheng
 date: 2021
 description: Some classic computer vision algorithms implemented in Python.
-image: /Images/Lenna-bg.jpg
+image: /Images/JBF-0.jpg
 github: 'https://github.com/Leon-LCC/2DCV-Implementation/'
 tags: ['#Python', '#Computer Vision']
 ---
@@ -25,9 +25,6 @@ More details can be found in the corresponding pages.
 -   [Robust Principal Component Analysis](https://github.com/Leon-LCC/RobustPCA-Python) (Page 4)
     -   The implementation of robust principal component analysis, a classic foreground-background separation algorithm.
 
-## Note for the Readers
-
-More contents will be added in the future. (Hopefully :smile:)
 
 ---
 

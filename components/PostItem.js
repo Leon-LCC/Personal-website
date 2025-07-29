@@ -19,7 +19,7 @@ const PostItem = ({ name, title, imageSrc, description }) => {
                 p="5%"
                 h="100%"
                 borderTopWidth="2px"
-                opacity={0.6}
+                opacity={0.9}
                 _hover={{ opacity: 1 }}
             >
                 <Flex flexWrap="wrap" alignItems="center" h="100%">

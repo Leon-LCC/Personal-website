@@ -42,7 +42,7 @@ const WorkSection = () => {
                         <WorkItem
                             name="2dcv-algo-imp"
                             title="2DCV Algorithms Implementation"
-                            imageSrc="/Images/Lenna.png"
+                            imageSrc="/Images/leaf.jpg"
                             description="Classic 2D Computer Vision algorithms implemented in Python."
                         />
                     </Box>

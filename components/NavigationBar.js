@@ -63,6 +63,7 @@ const NavigationBar = () => {
                             fontSize="3xl"
                             letterSpacing={'tighter'}
                             variant="logo"
+                            display={{ base: 'none', md: 'flex' }}
                         >
                             LEON
                         </Heading>

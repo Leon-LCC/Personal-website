@@ -14,7 +14,7 @@ const Custom404 = () => {
                     <Text fontSize="5xl" fontWeight="bold" w="100%">
                         Page Not Found
                     </Text>
-                    <Text fontSize="lg" fontWeight="bold" w="100%" mt="8">
+                    <Text fontSize="lg" fontWeight="bold" w="100%" mt="16">
                         You aren't supposed to be here!!
                     </Text>
                     <Text fontSize="lg" fontWeight="bold" w="100%">
@@ -23,7 +23,7 @@ const Custom404 = () => {
                     <Text fontSize="lg" fontWeight="bold" w="100%">
                         I'll introduce you to my snake.
                     </Text>
-                    <Box mt="2">
+                    <Box mt="2" mb='16'>
                         <Box
                             w="100px"
                             h="100px"
@@ -39,9 +39,6 @@ const Custom404 = () => {
                         </Box>
                         <Text fontSize="lg" fontWeight="bold" w="100%" mt="2">
                             His name is Sasuke.
-                        </Text>
-                        <Text fontSize="lg" fontWeight="bold" w="100%">
-                            He's a cutie.
                         </Text>
                     </Box>
                     <NextLink href="/">

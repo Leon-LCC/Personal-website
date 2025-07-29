@@ -14,13 +14,13 @@ const SPRITES = [
         url: '/Images/coffee.jpg',
         link: '/work',
         description: 'Work',
-        home: new THREE.Vector3(-0.8, -1.7, 0),
+        home: new THREE.Vector3(-0.5, -1.8, 0),
     },
     {
         url: '/Images/kyoto.png',
         link: '/post',
         description: 'Post',
-        home: new THREE.Vector3(3.5, 1.2, 0),
+        home: new THREE.Vector3(3.5, 1.3, 0),
     },
 ]
 
@@ -97,13 +97,13 @@ function FloatingSprite({ url, link, home, description }) {
             scale={[3, 9 / 5, 1]}
             onPointerDown={handlePointerDown}
             onPointerEnter={() => {
-                ref.current.material.opacity = 0.8
+                ref.current.material.opacity = 0.9
             }}
             onPointerLeave={() => {
-                ref.current.material.opacity = 0.6
+                ref.current.material.opacity = 0.8
             }}
         >
-            <spriteMaterial map={tex} transparent opacity={0.6} />
+            <spriteMaterial map={tex} transparent opacity={0.8} />
         </sprite>
     )
 }
