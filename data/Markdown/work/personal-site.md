@@ -20,4 +20,6 @@ tags:
 
 # My Portfolio
 
-(Work in progress)
+(Work in progress, I will write a post about how I built this website in the future.)
+
+(However, The source code is available on GitHub, so you can check it out now.)

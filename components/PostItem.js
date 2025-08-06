@@ -25,7 +25,7 @@ const PostItem = ({ name, title, imageSrc, description }) => {
                 <Flex flexWrap="wrap" alignItems="center" h="100%">
                     <Center
                         width={{ base: '100%', md: '30%' }}
-                        mb={{ base: '8%', md: '0' }}
+                        mb={{ base: '8%', md: '0%' }}
                         borderRadius="lg"
                         overflow="hidden"
                     >

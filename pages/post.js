@@ -26,7 +26,7 @@ const PostSection = () => {
                         align="center"
                         opacity={0.6}
                     >
-                        Click on the cards to learn more about them! <br />
+                        Some of My Learning Notes and Writings
                     </Text>
                 </Box>
                 <Flex flexWrap="wrap" w="100%">
@@ -36,6 +36,14 @@ const PostSection = () => {
                             title="Notes on Gradient Descent Algorithms"
                             imageSrc="/Images/gd-example.jpg"
                             description="My learning notes on the mathematical foundations of gradient descent algorithms."
+                        />
+                    </Box>
+                    <Box width={{ base: '100%', xl: '50%' }} p="2" pb="4">
+                        <PostItem
+                            name="GRE"
+                            title="GRE Preparation Experience"
+                            imageSrc="/Images/gre.png"
+                            description="Sharing my experience of preparing for the GRE exam. (Written in Mandarin)"
                         />
                     </Box>
                 </Flex>

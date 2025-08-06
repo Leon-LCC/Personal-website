@@ -208,14 +208,15 @@ const WorkPage = ({ frontmatter, markdownBody }) => {
         <MotionLayout>
             <Box
                 style={{
-                    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(${imageSrc})`,
+                    backgroundImage: `linear-gradient(rgba(22, 22, 22, 0.97), rgba(0, 0, 0, 0.99)), url(${imageSrc})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                 }}
-                pb="64"
+                pb={{ base: '40%', md: '28%', lg: '16%' }}
+                pt={{ base: '20%', md: '15%', xl: '6%' }}
             >
                 <Box
-                    pt="20"
+                    pt="6%"
                     pb="5%"
                     px={{ base: '0%', sm: '4%', md: '10%' }}
                     w="100%"
@@ -275,6 +276,8 @@ const WorkPage = ({ frontmatter, markdownBody }) => {
                     px={{ base: 6, md: 16 }}
                     borderRadius="xl"
                     bg={useColorModeValue('#ffffffff', '#0f0f0fff')}
+                    borderRadius="3xl"
+                    borderTopWidth={useColorModeValue('0px', '1px')}
                 >
                     {createPages()}
                 </Box>

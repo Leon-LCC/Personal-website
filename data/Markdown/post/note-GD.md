@@ -10,9 +10,11 @@ tags: ['#Machine Learning', '#Optimization', '#Gradient Descent']
 
 # Gradient Descent Algorithms
 
+(Work In Progress, I will update this note when I have time.)
+
 In this note, I will introduce the mathematical foundations of gradient descent algorithms, with a focus on analyzing the convergence rate of these algorithms for convex optimization problems.
 
-Basically, I will walk you through the relevant definitions, theorems, and proofs step by step. I hope this note can help you (and me) better understand the mathematical foundations of gradient descent algorithms.
+Basically, I will go through the relevant definitions, theorems, and proofs step by step. I hope this note can help me (and you) better understand the mathematical foundations of gradient descent algorithms.
 
 The note is organized as follows:
 
@@ -38,12 +40,6 @@ The note is organized as follows:
         -   4.4.1 Polyak's Momentum
         -   4.4.2 Nesterov's Momentum
 
-### Note to Readers
-
-This note is still under construction. I will keep updating it. If you find any mistakes or have any suggestions, please feel free to contact me. Thank you!
-
-Hope you aren't scared by the math symbols. :sweat_smile:
-
 ---
 
 # Gradient Descent Algorithms
@@ -67,12 +63,6 @@ If you are already familiar with them, or you just assume them to be true (life 
 ### 1.6 Loewner Order
 
 ### References
-
-### :memo: Note to Readers
-
-Congratulations! You have finished reading the first part. :tada:
-
-If you still want to continue, next page is about convexity of functions! :point_right:
 
 ---
 

@@ -23,7 +23,7 @@ const Custom404 = () => {
                     <Text fontSize="lg" fontWeight="bold" w="100%">
                         I'll introduce you to my snake.
                     </Text>
-                    <Box mt="2" mb='16'>
+                    <Box mt="2" mb="16">
                         <Box
                             w="100px"
                             h="100px"

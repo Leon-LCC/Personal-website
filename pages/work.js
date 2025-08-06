@@ -26,7 +26,7 @@ const WorkSection = () => {
                         align="center"
                         opacity={0.6}
                     >
-                        Click on the cards to learn more about them! <br />
+                        Selected Works (Not Including My Research Projects)
                     </Text>
                 </Box>
                 <Flex flexWrap="wrap" w="100%">
@@ -36,6 +36,14 @@ const WorkSection = () => {
                             title="My Portfolio"
                             imageSrc="/Images/mysite.png"
                             description="A personal website built with React, Next.js, and Chakra UI. Some cool animations are also added with Framer Motion and Three.js."
+                        />
+                    </Box>
+                    <Box width={{ base: '100%', xl: '50%' }} p="2" pb="4">
+                        <WorkItem
+                            name="ninja-game"
+                            title="Ninja Game"
+                            imageSrc="/Images/ninja.png"
+                            description="A 2D side-scrolling game built with Java."
                         />
                     </Box>
                     <Box width={{ base: '100%', xl: '50%' }} p="2" pb="4">
@@ -52,22 +60,6 @@ const WorkSection = () => {
                             title="3DCV Algorithms Implementation"
                             imageSrc="/Images/3dcv.jpg"
                             description="Some 3D Computer Vision algorithms implemented in Python, such as Stereo Matching and Visual Odometry."
-                        />
-                    </Box>
-                    <Box width={{ base: '100%', xl: '50%' }} p="2" pb="4">
-                        <WorkItem
-                            name="frame-interpolation"
-                            title="Video Frame Interpolation"
-                            imageSrc="/Images/interpolation.jpg"
-                            description="A video frame interpolation project implemented in Python."
-                        />
-                    </Box>
-                    <Box width={{ base: '100%', xl: '50%' }} p="2" pb="4">
-                        <WorkItem
-                            name="ninja-game"
-                            title="Ninja Game"
-                            imageSrc="/Images/ninja.jpg"
-                            description="A 2D side-scrolling game built with Java."
                         />
                     </Box>
                 </Flex>

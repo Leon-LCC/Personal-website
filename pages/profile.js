@@ -24,6 +24,7 @@ import ProfileItem from '../components/ProfileItem'
 import MotionLayout from '../components/MotionLayout'
 
 import profileData from '../data/Profile/data.json'
+import { use } from 'react'
 
 const ProfileSection = () => {
     const experiences = () => {
@@ -517,7 +518,10 @@ const ProfileSection = () => {
                                         text="React"
                                     />
                                     <IconSkill
-                                        imgSrc="/Images/Icons/nextjs.png"
+                                        imgSrc={useColorModeValue(
+                                            '/Images/Icons/nextjs.png',
+                                            '/Images/Icons/nextjs-white.png'
+                                        )}
                                         text="Next.js"
                                     />
                                     <IconSkill

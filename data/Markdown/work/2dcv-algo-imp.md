@@ -19,12 +19,11 @@ The work contains some classic computer vision algorithms implemented in Python.
 More details can be found in the corresponding pages.
 
 -   [Harris Corner Detector](https://github.com/Leon-LCC/2DCV-Implementation/tree/main/Harris_Corner_Detector) (Page 2)
-    -   The implementation of Harris corner detector, a classic corner detection algorithm.
+    -   A classic corner detection algorithm.
 -   [Joint Bilateral Filter](https://github.com/Leon-LCC/2DCV-Implementation/tree/main/Joint_Bilateral_Filter) (Page 3)
-    -   The implementation of joint bilateral filter, a classic edge-preserving smoothing algorithm.
+    -   A classic edge-preserving smoothing algorithm.
 -   [Robust Principal Component Analysis](https://github.com/Leon-LCC/RobustPCA-Python) (Page 4)
-    -   The implementation of robust principal component analysis, a classic foreground-background separation algorithm.
-
+    -   A classic foreground-background separation algorithm.
 
 ---
 

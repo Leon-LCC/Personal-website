@@ -44,7 +44,7 @@ const NavigationBar = () => {
                         bg={useColorModeValue('#f4f4f4', '#000000ff')}
                     >
                         <Image
-                            src="/Images/logo.gif"
+                            src="/Images/Icons/logo.gif"
                             alt="logo"
                             width="60"
                             height="40"
