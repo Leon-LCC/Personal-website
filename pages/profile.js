@@ -177,6 +177,7 @@ const ProfileSection = () => {
                                         <Link
                                             href="mailto:lc.cheng00@gmail.com"
                                             target="_blank"
+                                            _hover={{ textDecoration: 'none' }}
                                         >
                                             <Button
                                                 leftIcon={<MdOutlineEmail />}
@@ -185,7 +186,7 @@ const ProfileSection = () => {
                                                     base: 'none',
                                                     xl: 'flex',
                                                 }}
-                                                variant="solid"
+                                                variant="solid2"
                                                 size="sm"
                                                 fontSize="lg"
                                             >
@@ -206,6 +207,7 @@ const ProfileSection = () => {
                                                 fontSize="4xl"
                                                 size="xs"
                                                 colorScheme="whiteAlpha"
+                                                _hover={{ background: 'none' }}
                                             />
                                         </Link>
                                     </Box>
@@ -213,6 +215,7 @@ const ProfileSection = () => {
                                         <Link
                                             href="https://github.com/Leon-LCC"
                                             target="_blank"
+                                            _hover={{ textDecoration: 'none' }}
                                         >
                                             <Button
                                                 leftIcon={<IoLogoGithub />}
@@ -221,7 +224,7 @@ const ProfileSection = () => {
                                                     base: 'none',
                                                     xl: 'flex',
                                                 }}
-                                                variant="solid"
+                                                variant="solid2"
                                                 size="sm"
                                                 fontSize="lg"
                                             >
@@ -242,6 +245,7 @@ const ProfileSection = () => {
                                                 fontSize="4xl"
                                                 size="xs"
                                                 colorScheme="whiteAlpha"
+                                                _hover={{ background: 'none' }}
                                             />
                                         </Link>
                                     </Box>
@@ -249,6 +253,7 @@ const ProfileSection = () => {
                                         <Link
                                             href="https://www.linkedin.com/in/li-chen-cheng/"
                                             target="_blank"
+                                            _hover={{ textDecoration: 'none' }}
                                         >
                                             <Button
                                                 leftIcon={<IoLogoLinkedin />}
@@ -257,7 +262,7 @@ const ProfileSection = () => {
                                                     base: 'none',
                                                     xl: 'flex',
                                                 }}
-                                                variant="solid"
+                                                variant="solid2"
                                                 size="sm"
                                                 fontSize="lg"
                                             >
@@ -278,6 +283,7 @@ const ProfileSection = () => {
                                                 fontSize="4xl"
                                                 size="xs"
                                                 colorScheme="whiteAlpha"
+                                                _hover={{ background: 'none' }}
                                             />
                                         </Link>
                                     </Box>

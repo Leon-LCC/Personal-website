@@ -160,11 +160,15 @@ const NavigationBar = () => {
                 </Button>
                 <IconButton
                     aria-label="Theme"
-                    bg={useColorModeValue('#515050ff', '#F7F4F2')}
+                    bg={useColorModeValue('#515050ff', '#ebebebff')}
                     color={useColorModeValue('whiteAlpha.900', 'black')}
                     colorScheme="black"
                     icon={useColorModeValue(<MoonIcon />, <SunIcon />)}
                     onClick={toggleColorMode}
+                    _hover={{
+                        bg: useColorModeValue('#323232', '#fafafaff'),
+                        transition: 'background 0.2s',
+                    }}
                 />
             </HStack>
         </Flex>
